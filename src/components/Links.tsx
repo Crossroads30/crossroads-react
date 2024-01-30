@@ -8,8 +8,6 @@ const Links = () => {
 			{links.map(link => {
 				return (
 					<li key={link.id}>
-						{/* eslint-disable-next-line
-									@ts-nocheck */}
 						<NavLink to={link.url} >
 							{link.text}
 						</NavLink>
