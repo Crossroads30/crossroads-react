@@ -1,5 +1,6 @@
 /* fonts */
-@import url('https://fonts.googleapis.com/css2?family=Cabin&family=Roboto+Condensed:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@500&display=swap');
 
 *,
 ::after,
@@ -45,8 +46,10 @@ html {
   --green-dark: #0f5132;
 
   /* fonts  */
-  --headingFont: 'Roboto Condensed', Sans-Serif;
-  --bodyFont: 'Cabin', Sans-Serif;
+  /* --headingFont: 'Roboto Condensed', Sans-Serif; */
+  --headingFont: 'Comfortaa', Sans-Serif;
+  --bodyFont: 'Caveat', Sans-Serif;
+  --largeText: 2.2rem;
   --small-text: 0.875rem;
   --extra-small-text: 0.7em;
   /* rest of the vars */
@@ -81,6 +84,7 @@ body {
 p {
   margin-bottom: 1.5rem;
   max-width: 40em;
+  font-size: var(--largeText);
 }
 
 h1,
