@@ -8,9 +8,7 @@ const Links = () => {
 			{links.map(link => {
 				return (
 					<li key={link.id}>
-						<NavLink to={link.url} >
-							{link.text}
-						</NavLink>
+						<NavLink to={link.url}>{link.text}</NavLink>
 					</li>
 				)
 			})}
@@ -20,15 +18,19 @@ const Links = () => {
 export default Links
 
 const Wrapper = styled.ul`
-	display: flex;
-	justify-content: space-between;
 	width: 500px;
+	display: none;
 	li a {
 		text-decoration: none;
 		color: #000;
 		font-size: 1.2rem;
 	}
 	.active {
-		color: red;
+		color: var(--clr-gold);
+		text-shadow: 1px 1px 1px #af0909;
+	}
+	@media screen and (min-width: 1024px) {
+		display: flex;
+		justify-content: space-between;
 	}
 `
