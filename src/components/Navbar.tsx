@@ -7,7 +7,9 @@ const Navbar = () => {
 		<Wrapper>
 			<div className='section-center flex header'>
 				<h1>перекрёсток</h1>
-				<Links />
+				<div className='nav-links flex'>
+					<Links />
+				</div>
 				<GiHamburgerMenu className='burger' />
 			</div>
 		</Wrapper>
@@ -25,6 +27,9 @@ const Wrapper = styled.header`
 			font-size: 0.8rem;
 			text-transform: uppercase;
 			text-shadow: 1px 2px 3px #ff8801;
+		}
+		.nav-links {
+			display: none;
 		}
 	}
 	.burger {
@@ -52,6 +57,9 @@ const Wrapper = styled.header`
 			}
 			.burger {
 				display: none;
+			}
+			.nav-links {
+				display: flex;
 			}
 		}
 	}
