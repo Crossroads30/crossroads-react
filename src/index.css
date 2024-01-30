@@ -54,6 +54,7 @@ html {
 	--dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 	--max-width: 1670px;
 	--fixed-width: 620px;
+	--fluid-width: 90vw;
 	/* fonts */
 	--main-font: 'Comfortaa', sans-serif;
 	--body-font: 'Caveat', sans-serif;
