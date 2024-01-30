@@ -1,12 +1,12 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import { Home, Videos, Songs, Albums, News } from './pages'
-import Header from './components/Header'
+import Navbar from './components/Navbar'
 import Footer from './components/Footer'
 
 function App(): JSX.Element {
 	return (
 		<BrowserRouter>
-			<Header />
+			<Navbar />
 			<Routes>
 				<Route path='/' element={<Home />} />
 				<Route path='/videos' element={<Videos />} />
