@@ -56,7 +56,7 @@ const Wrapper = styled.main`
 	.text {
 		align-self: flex-start;
 		padding: 1rem;
-		background-color: rgba(62, 125, 170, 0.588);
+		background-color: var(--clr-grey-4);
 	}
 	.sign {
 		display: none;

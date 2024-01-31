@@ -25,9 +25,6 @@ const SideBar = ({ setSidebarOpen, isSidebarOpen }) => {
 export default SideBar
 
 const Wrapper = styled.aside`
-	/* @media (min-width: 992px) {
-		display: none;
-	} */
 	.sidebar-container {
 		position: fixed;
 		inset: 0;
@@ -44,7 +41,7 @@ const Wrapper = styled.aside`
 		opacity: 1;
 	}
 	.content {
-		background: var(--clr-white);
+		background: var(--clr-grey-9);
 		width: var(--fluid-width);
 		height: 95vh;
 		border-radius: var(--borderRadius);
