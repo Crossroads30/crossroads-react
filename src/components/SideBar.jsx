@@ -1,13 +1,17 @@
 import styled from 'styled-components'
 import Links from './Links'
 import { CgClose } from 'react-icons/cg'
+import React from 'react'
 
-const SideBar = () => {
+const SideBar = ({ setSidebarOpen }) => {
 	return (
 		<Wrapper>
-			<div className='sidebar-container show-sidebar'>
+			<div className='sidebar-container'>
 				<div className='content'>
-					<CgClose className='close-btn' />
+					<CgClose
+						className='close-btn'
+						onClick={() => setSidebarOpen(false)}
+					/>
 					<Links />
 				</div>
 			</div>

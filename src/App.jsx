@@ -3,12 +3,15 @@ import { Home, Videos, Songs, Albums, News } from './pages'
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
 import SideBar from './components/SideBar'
+import React, { useState } from 'react'
 
-function App(): JSX.Element {
+const App = () => {
+	const [isSidebarOpen, setSidebarOpen] = useState(false)
+
 	return (
 		<BrowserRouter>
-			<Navbar />
-			<SideBar />
+			<Navbar setSidebarOpen={setSidebarOpen} />
+			<SideBar setSidebarOpen={setSidebarOpen} isSidebarOpen={isSidebarOpen} />
 			<Routes>
 				<Route path='/' element={<Home />} />
 				<Route path='/videos' element={<Videos />} />
