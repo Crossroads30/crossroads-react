@@ -10,7 +10,7 @@ const App = () => {
 
 	return (
 		<BrowserRouter>
-			<Navbar setSidebarOpen={setSidebarOpen} />
+			<Navbar setSidebarOpen={setSidebarOpen} isSidebarOpen={isSidebarOpen} />
 			<SideBar setSidebarOpen={setSidebarOpen} isSidebarOpen={isSidebarOpen} />
 			<Routes>
 				<Route path='/' element={<Home />} />
