@@ -3,10 +3,14 @@ import Links from './Links'
 import { CgClose } from 'react-icons/cg'
 import React from 'react'
 
-const SideBar = ({ setSidebarOpen }) => {
+const SideBar = ({ setSidebarOpen, isSidebarOpen }) => {
 	return (
 		<Wrapper>
-			<div className='sidebar-container'>
+			<div
+				className={
+					isSidebarOpen ? 'sidebar-container show-sidebar' : 'sidebar-container'
+				}
+			>
 				<div className='content'>
 					<CgClose
 						className='close-btn'
@@ -74,5 +78,10 @@ const Wrapper = styled.aside`
 	}
 	.nav-link a:hover {
 		color: var(--clr-grey-5);
+	}
+	@media screen and (min-width: 1024px) {
+		.sidebar-container {
+			display: none;
+		}
 	}
 `

@@ -2,7 +2,7 @@ import styled from 'styled-components'
 import Links from './Links'
 import { GiHamburgerMenu } from 'react-icons/gi'
 
-const Navbar = () => {
+const Navbar = ({ setSidebarOpen }) => {
 	return (
 		<Wrapper>
 			<div className='section-center flex header'>
@@ -10,7 +10,7 @@ const Navbar = () => {
 				<div className='nav-links flex'>
 					<Links />
 				</div>
-				<GiHamburgerMenu className='burger' />
+				<GiHamburgerMenu className='burger' onClick={() => setSidebarOpen(true)} />
 			</div>
 		</Wrapper>
 	)
