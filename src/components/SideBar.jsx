@@ -16,7 +16,10 @@ const SideBar = ({ setSidebarOpen, isSidebarOpen }) => {
 						className='close-btn'
 						onClick={() => setSidebarOpen(false)}
 					/>
-					<Links />
+					<Links
+						setSidebarOpen={setSidebarOpen}
+						isSidebarOpen={isSidebarOpen}
+					/>
 				</div>
 			</div>
 		</Wrapper>
