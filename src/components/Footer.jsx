@@ -8,9 +8,7 @@ const Footer = () => {
 	return (
 		<Wrapper>
 			<div className='section-center flex footer'>
-				<div className='text'>
-					<p>COPYRIGHT © PERECRESTOKMUSIC {year}</p>
-				</div>
+				<p className='text'>COPYRIGHT © PERECRESTOKMUSIC {year}</p>
 				<Link
 					to='https://www.youtube.com/@user-sr2nv1yl6h'
 					className='youTube-link'
@@ -25,56 +23,59 @@ const Footer = () => {
 export default Footer
 
 const Wrapper = styled.footer`
-	background-color: var(--clr-sepia);
+	background-color: var(--clr-grey-2);
+	line-height: 1em;
 	.footer {
-		height: 2rem;
-		p {
-			margin-bottom: 0;
-			font-size: 0.45rem;
-		}
+		height: 3rem;
 	}
-	.text {
-		display: flex;
-		align-items: flex-end;
-		height: 14px;
+	p {
+		margin-bottom: 0;
+		font-size: 7px;
 	}
 	.youTube-link {
 		display: flex;
-		color: var(--clr-grey-1);
+		color: var(--clr-grey-8);
 		align-items: center;
-		p {
-			align-self: flex-end;
-		}
 	}
 	.youTube-link:hover {
 		text-decoration: underline;
 	}
 	.logo {
-		margin-left: 4px;
+		margin-left: 3px;
+		color: var(--clr-grey-8);
+		margin-bottom: 0.5px;
 	}
-
+	@media screen and (min-width: 425px) {
+		p {
+			font-size: 0.6rem;
+		}
+		.logo {
+			height: 20px;
+			width: 20px;
+			margin-left: 3px;
+			margin-bottom: 3px;
+		}
+	}
 	@media screen and (min-width: 768px) {
 		.footer {
-			height: 4rem;
-			p {
-				font-size: 1rem;
-			}
+			height: 3rem;
+		}
+		p {
+			font-size: 0.7rem;
 		}
 		.logo {
 			height: 25px;
 			width: 25px;
 			margin-left: 8px;
-		}
-		.text {
-			height: 25px;
+			margin-bottom: 3px;
 		}
 	}
 	@media screen and (min-width: 1024px) {
 		.footer {
-			height: 5rem;
-			p {
-				font-size: 1.2rem;
-			}
+			height: 4rem;
+		}
+		p {
+			font-size: 1rem;
 		}
 		.logo {
 			height: 30px;
@@ -82,9 +83,6 @@ const Wrapper = styled.footer`
 		}
 		.youTube-link p {
 			margin-top: 1px;
-		}
-		.text {
-			height: 30px;
 		}
 	}
 `
