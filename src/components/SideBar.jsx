@@ -41,7 +41,7 @@ const Wrapper = styled.aside`
 		opacity: 1;
 	}
 	.content {
-		background: var(--clr-grey-9);
+		background: var(--clr-grey-5);
 		width: var(--fluid-width);
 		height: 95vh;
 		border-radius: var(--borderRadius);
@@ -58,7 +58,7 @@ const Wrapper = styled.aside`
 		background: transparent;
 		border-color: transparent;
 		font-size: 2rem;
-		color: var(--clr-red-dark);
+		color: var(--clr-gold);
 		cursor: pointer;
 	}
 	.nav-links {
@@ -74,7 +74,13 @@ const Wrapper = styled.aside`
 		transition: var(--transition);
 	}
 	.nav-link a:hover {
-		color: var(--clr-grey-5);
+		background-color: transparent;
+	}
+	.active {
+		background-color: transparent;
+		border-bottom: 0;
+		color: var(--clr-gold);
+		text-shadow: 1px 1px 2px var(--clr-black);
 	}
 	@media screen and (min-width: 1024px) {
 		.sidebar-container {
