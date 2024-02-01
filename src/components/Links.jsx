@@ -2,14 +2,19 @@ import styled from 'styled-components'
 import { links } from '../data'
 import { NavLink } from 'react-router-dom'
 
-const Links = () => {
+const Links = ({ setSidebarOpen, isSidebarOpen }) => {
 	return (
 		<Wrapper>
 			<ul className='nav-links'>
 				{links.map(link => {
 					return (
 						<li key={link.id} className='nav-link'>
-							<NavLink to={link.url}>{link.text}</NavLink>
+							<NavLink
+								to={link.url}
+								onClick={() => setSidebarOpen(!isSidebarOpen)}
+							>
+								{link.text}
+							</NavLink>
 						</li>
 					)
 				})}
