@@ -29,9 +29,13 @@ const Wrapper = styled.div`
 		font-size: 1.2rem;
 	}
 	.active {
-		color: var(--clr-gold);
-		text-shadow: 1px 1px 1px #af0909;
+		color: var(--clr-black);
+		/* text-shadow: 1px 1px 1px #af0909; */
 		pointer-events: none;
+		-webkit-text-stroke: 1.2px var(--clr-primary-1);
+	}
+	.nav-link a:hover {
+		color: var(--clr-grey-5);
 	}
 	@media screen and (min-width: 1024px) {
 		.nav-links {
