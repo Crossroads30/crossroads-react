@@ -45,8 +45,8 @@ html {
 	--clr-red-light: hsl(360, 71%, 66%);
 	--clr-green-dark: hsl(125, 67%, 44%);
 	--clr-green-light: hsl(125, 71%, 66%);
-	--clr-black: #222;
-	--clr-gold: hsla(44, 100%, 50%, 0.942);
+	--clr-black: #000000;
+	--clr-gold: hsl(44, 97%, 49%);
 	--transition: all 0.3s linear;
 	--spacing: 0.1rem;
 	--radius: 0.25rem;
