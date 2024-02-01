@@ -63,6 +63,7 @@ export const songs = [
 	{
 		id: 1,
 		src: '../../../src/assets/sounds/сhristmas.mp3',
+            url: 'https://images.pexels.com/photos/1708601/pexels-photo-1708601.jpeg?cs=srgb&dl=pexels-brett-sayles-1708601.jpg&fm=jpg&w=1920&h=1280&_gl=1*1o6pfh2*_ga*MTE0NDAwNTEwOS4xNzA2MDAyOTMy*_ga_8JE65Q40S6*MTcwNjgyMjQ5Ny42LjEuMTcwNjgyMzAyMi4wLjAuMA..',
 		title: 'Наконец-то Рождество!',
 		text: `Год прошёл и мы опять,
       Начинаем понимать,
