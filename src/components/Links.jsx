@@ -29,10 +29,10 @@ const Wrapper = styled.div`
 		font-size: 1.2rem;
 	}
 	.active {
-		color: var(--clr-black);
+		color: var(--clr-red-dark);
 		/* text-shadow: 1px 1px 1px #af0909; */
 		pointer-events: none;
-		-webkit-text-stroke: 1.2px var(--clr-primary-1);
+		-webkit-text-stroke: 0.4px var(--clr-gold);
 	}
 	.nav-link a:hover {
 		color: var(--clr-grey-5);
