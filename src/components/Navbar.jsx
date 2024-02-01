@@ -9,6 +9,8 @@ const Navbar = ({ setSidebarOpen, isSidebarOpen }) => {
 				<h1>перекрёсток</h1>
 				<div className='nav-links flex'>
 					<Links
+						setSidebarOpen={setSidebarOpen}
+						isSidebarOpen={isSidebarOpen}
 					/>
 				</div>
 				<GiHamburgerMenu
