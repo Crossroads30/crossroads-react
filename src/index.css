@@ -78,7 +78,7 @@ body {
 	color: var(--clr-grey-1);
 	line-height: 1.5;
 	font-size: 0.875rem;
-	/* letter-spacing: 1px; */
+	letter-spacing: 1px;
 }
 ul {
 	list-style-type: none;
@@ -103,7 +103,7 @@ h5 {
 p {
 	margin-bottom: 1rem;
 	color: var(--clr-grey-3);
-	font-family: var(--body-font);
+	font-family: var(--main-font);
 }
 /*  global classes */
 
@@ -114,11 +114,6 @@ p {
 	width: 90vw;
 }
 
-/* @media screen and (min-width: 992px) {
-	.section-center {
-		width: 95vw;
-	}
-} */
 .text-center {
 	text-align: center;
 }
