@@ -41,12 +41,15 @@ html {
 	--clr-white: #ffffff;
 	--clr-sepia: #dbdfb4;
 	--clr-text: hsl(0, 0%, 98%);
+	--clr-text-2: hsla(0, 0%, 100%, 0.8);
 	--clr-red-dark: hsl(360, 67%, 44%);
 	--clr-red-light: hsl(360, 71%, 66%);
 	--clr-green-dark: hsl(125, 67%, 44%);
 	--clr-green-light: hsl(125, 71%, 66%);
 	--clr-black: #000000;
 	--clr-gold: hsl(44, 97%, 49%);
+	--clr-rand: hsla(0, 0%, 54%, 0.994);
+	--clr-rand-1: hsla(0, 0%, 54%, 0.508);
 	--transition: all 0.3s linear;
 	--spacing: 0.1rem;
 	--radius: 0.25rem;
@@ -119,7 +122,7 @@ p {
 }
 
 .height {
-	min-height: calc(100svh - 4rem);
+	min-height: calc(100svh - 2rem);
 }
 
 .flex {
@@ -135,11 +138,11 @@ p {
 }
 @media screen and (min-width: 768px) {
 	.height {
-		min-height: calc(100svh - 8rem);
+		min-height: calc(100svh - 4rem);
 	}
 }
 @media screen and (min-width: 1024px) {
 	.height {
-		min-height: calc(100svh - 10rem);
+		min-height: calc(100svh - 5rem);
 	}
 }
