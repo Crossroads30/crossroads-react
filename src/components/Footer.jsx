@@ -30,7 +30,7 @@ const Wrapper = styled.footer`
 	}
 	p {
 		margin-bottom: 0;
-		font-size: 7px;
+		font-size: 5.8px;
 	}
 	.youTube-link {
 		display: flex;
@@ -41,7 +41,7 @@ const Wrapper = styled.footer`
 		text-decoration: underline;
 	}
 	.logo {
-		margin-left: 3px;
+		margin-left: 2px;
 		color: var(--clr-grey-8);
 		margin-bottom: 0.5px;
 	}

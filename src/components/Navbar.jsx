@@ -34,13 +34,14 @@ const Wrapper = styled.header`
 		text-transform: uppercase;
 		text-shadow: 3px 3px 6px var(--clr-black);
 		color: var(--clr-grey-10);
-		padding: 5px 0
+		padding: 5px 0;
 	}
 	.nav-links {
 		display: none;
 	}
 	.burger {
 		cursor: pointer;
+		color: var(--clr-grey-10);
 	}
 	@media screen and (min-width: 768px) {
 		h1 {

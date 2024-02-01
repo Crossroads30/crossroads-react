@@ -51,10 +51,11 @@ const Wrapper = styled.main`
 	background: url(${background}) no-repeat center center;
 	background-size: cover;
 	.text {
+		margin-top: calc(35px + 3vh);
 		align-self: flex-start;
 		padding: 1rem;
 		background-color: var(--clr-grey-4);
-		margin-top: 1rem;
+		margin-bottom: 2vh;
 	}
 	.sign {
 		display: none;
@@ -63,7 +64,7 @@ const Wrapper = styled.main`
 		text-align: right;
 	}
 	p {
-		font-size: calc(0.35vw + 0.7vh + 1vmin);
+		font-size: calc(0.2vw + 0.6vh + 1vmin);
 		color: var(--clr-text);
 		text-shadow: 1px 2px 4px #000000;
 	}
@@ -84,8 +85,7 @@ const Wrapper = styled.main`
 	}
 	@media screen and (min-width: 768px) {
 		.text {
-			align-self: center;
-			margin-top: 0;
+			margin-top: calc(50px + 3vh);
 		}
 		p {
 			font-size: calc(0.22vw + 0.6vh + 1vmin);
@@ -93,7 +93,7 @@ const Wrapper = styled.main`
 	}
 	@media screen and (min-width: 1024px) {
 		.text {
-			max-width: calc(36vw + 20vh + 1vmin);
+			max-width: calc(42vw + 20vh + 1vmin);
 		}
 		p {
 			font-size: calc(0.2vw + 0.4vh + 1vmin);
