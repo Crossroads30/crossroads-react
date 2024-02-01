@@ -5,12 +5,17 @@ import { GiHamburgerMenu } from 'react-icons/gi'
 const Navbar = ({ setSidebarOpen }) => {
 	return (
 		<Wrapper>
-			<div className='section-center flex header'>
-				<h1>перекрёсток</h1>
-				<div className='nav-links flex'>
-					<Links />
+			<div className='header'>
+				<div className='section-center flex'>
+					<h1>перекрёсток</h1>
+					<div className='nav-links flex'>
+						<Links />
+					</div>
+					<GiHamburgerMenu
+						className='burger'
+						onClick={() => setSidebarOpen(true)}
+					/>
 				</div>
-				<GiHamburgerMenu className='burger' onClick={() => setSidebarOpen(true)} />
 			</div>
 		</Wrapper>
 	)
@@ -19,14 +24,20 @@ const Navbar = ({ setSidebarOpen }) => {
 export default Navbar
 
 const Wrapper = styled.header`
-	background-color: var(--clr-sepia);
+	/* background-color: var(--clr-sepia); */
+	background-color: transparent;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100vw;
 	.header {
 		height: 2rem;
 		/* width: 90%; */
 		h1 {
 			font-size: 0.8rem;
 			text-transform: uppercase;
-			text-shadow: 1px 2px 3px #ff8801;
+			text-shadow: 3px 3px 6px var(--clr-black);
+			color: var(--clr-text-2);
 		}
 		.nav-links {
 			display: none;
