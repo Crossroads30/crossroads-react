@@ -4,7 +4,7 @@ import background from '../assets/bgrs/home-bgr.jpg'
 const Home = () => {
 	return (
 		<Wrapper>
-			<div className='section section-center flex height'>
+			<div className='section-center flex height'>
 				<div className='text'>
 					<p>
 						Перекрёсток, иными словами перепутье - это своего рода граница между
