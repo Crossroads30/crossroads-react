@@ -50,13 +50,11 @@ export default Home
 const Wrapper = styled.main`
 	background: url(${background}) no-repeat center center;
 	background-size: cover;
-	.section {
-		padding: 1rem;
-	}
 	.text {
 		align-self: flex-start;
 		padding: 1rem;
 		background-color: var(--clr-grey-4);
+		margin-top: 1rem;
 	}
 	.sign {
 		display: none;
@@ -65,7 +63,7 @@ const Wrapper = styled.main`
 		text-align: right;
 	}
 	p {
-		font-size: calc(0.8vw + 0.9vh + 1vmin);
+		font-size: calc(0.35vw + 0.7vh + 1vmin);
 		color: var(--clr-text);
 		text-shadow: 1px 2px 4px #000000;
 	}
@@ -77,9 +75,20 @@ const Wrapper = styled.main`
 		margin-right: 1px;
 		color: rgb(233, 198, 101);
 	}
+	.sign-small {
+		margin-bottom: 0;
+		text-align: center;
+	}
+	p:nth-child(6) {
+		margin-bottom: 1.8rem;
+	}
 	@media screen and (min-width: 768px) {
+		.text {
+			align-self: center;
+			margin-top: 0;
+		}
 		p {
-			font-size: calc(0.66vw + 0.8vh + 1vmin);
+			font-size: calc(0.22vw + 0.6vh + 1vmin);
 		}
 	}
 	@media screen and (min-width: 1024px) {
@@ -87,11 +96,15 @@ const Wrapper = styled.main`
 			max-width: calc(36vw + 20vh + 1vmin);
 		}
 		p {
-			font-size: calc(0.39vw + 0.7vh + 1vmin);
+			font-size: calc(0.2vw + 0.4vh + 1vmin);
+		}
+		p:nth-child(6) {
+			margin-bottom: 0;
 		}
 		.sign {
 			display: block;
 			align-self: end;
+			margin-bottom: 3%;
 		}
 		.sign-small {
 			display: none;
