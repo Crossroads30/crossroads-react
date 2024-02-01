@@ -12,7 +12,7 @@ const Songs = () => {
 					{songs.map(song => {
 						return (
 							<li key={song.id} className='song'>
-								<Link to={`/songs/:${song.id}`}>
+								<Link to={`/songs/${song.id}`}>
 									<p>{song.title}</p>
 									<hr className='hr-1' />
 								</Link>
