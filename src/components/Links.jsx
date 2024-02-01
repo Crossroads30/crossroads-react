@@ -20,26 +20,38 @@ const Links = () => {
 export default Links
 
 const Wrapper = styled.div`
-	.nav-links {
-		width: 500px;
-	}
 	li a {
 		text-decoration: none;
-		color: #000;
+		color: var(--clr-white);
+		text-shadow: 3px 4px 6px var(--clr-black);
 		font-size: 1.2rem;
+
+		padding: 2px 10px;
+		border-radius: 10px;
+		background-color: transparent;
+		border-bottom: 5px solid transparent;
+		border-right: 3px solid transparent;
 	}
 	.active {
-		color: var(--clr-red-dark);
-		/* text-shadow: 1px 1px 1px #af0909; */
+		border-bottom: 5px solid red;
+		/* border-right: 3px solid red; */
+		padding: 2px 10px;
+		border-radius: 10px;
 		pointer-events: none;
-		-webkit-text-stroke: 0.4px var(--clr-gold);
+		background-color: var(--clr-rand);
 	}
+
 	.nav-link a:hover {
-		color: var(--clr-grey-5);
+		padding: 2px 10px;
+		border-radius: 10px;
+		background-color: var(--clr-rand-1);
 	}
 	@media screen and (min-width: 1024px) {
+		.nav-link {
+			text-align: center;
+		}
 		.nav-links {
-			width: 500px;
+			width: 580px;
 			display: flex;
 			justify-content: space-between;
 		}
