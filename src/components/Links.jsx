@@ -22,19 +22,17 @@ export default Links
 const Wrapper = styled.div`
 	li a {
 		text-decoration: none;
-		color: var(--clr-white);
-		text-shadow: 3px 4px 6px var(--clr-black);
-		font-size: 1.2rem;
+		color: var(--clr-grey-10);
+		text-shadow: 2px 2px 4px var(--clr-black);
+		font-size: 1rem;
 
 		padding: 2px 10px;
 		border-radius: 10px;
 		background-color: transparent;
-		border-bottom: 5px solid transparent;
-		border-right: 3px solid transparent;
 	}
 	.active {
-		border-bottom: 5px solid red;
-		/* border-right: 3px solid red; */
+		border-bottom: 3px solid var(--clr-gold);
+		color: var(--clr-white);
 		padding: 2px 10px;
 		border-radius: 10px;
 		pointer-events: none;
@@ -44,14 +42,14 @@ const Wrapper = styled.div`
 	.nav-link a:hover {
 		padding: 2px 10px;
 		border-radius: 10px;
-		background-color: var(--clr-rand-1);
+		background-color: var(--clr-rand);
 	}
 	@media screen and (min-width: 1024px) {
 		.nav-link {
 			text-align: center;
 		}
 		.nav-links {
-			width: 580px;
+			width: 500px;
 			display: flex;
 			justify-content: space-between;
 		}
