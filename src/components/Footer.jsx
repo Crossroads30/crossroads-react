@@ -32,10 +32,14 @@ const Wrapper = styled.footer`
 		margin-bottom: 0;
 		font-size: 5.8px;
 	}
+	.youTube-link p {
+		font-family: var(--body-font);
+	}
 	.youTube-link {
 		display: flex;
 		color: var(--clr-grey-8);
 		align-items: center;
+		font-family: var(--body-font);
 	}
 	.youTube-link:hover {
 		text-decoration: underline;
@@ -43,17 +47,15 @@ const Wrapper = styled.footer`
 	.logo {
 		margin-left: 2px;
 		color: var(--clr-grey-8);
-		margin-bottom: 0.5px;
 	}
 	@media screen and (min-width: 425px) {
 		p {
 			font-size: 0.6rem;
 		}
 		.logo {
-			height: 20px;
-			width: 20px;
+			height: 17px;
+			width: 17px;
 			margin-left: 3px;
-			margin-bottom: 3px;
 		}
 	}
 	@media screen and (min-width: 768px) {
@@ -64,10 +66,9 @@ const Wrapper = styled.footer`
 			font-size: 0.7rem;
 		}
 		.logo {
-			height: 25px;
-			width: 25px;
-			margin-left: 8px;
-			margin-bottom: 3px;
+			height: 20px;
+			width: 20px;
+			margin-left: 5px;
 		}
 	}
 	@media screen and (min-width: 1024px) {
@@ -78,8 +79,8 @@ const Wrapper = styled.footer`
 			font-size: 1rem;
 		}
 		.logo {
-			height: 30px;
-			width: 30px;
+			height: 26px;
+			width: 26px;
 		}
 		.youTube-link p {
 			margin-top: 1px;
