@@ -2,17 +2,18 @@ import styled from 'styled-components'
 import Links from './Links'
 import { GiHamburgerMenu } from 'react-icons/gi'
 
-const Navbar = ({ setSidebarOpen }) => {
+const Navbar = ({ setSidebarOpen, isSidebarOpen }) => {
 	return (
 		<Wrapper>
 			<div className='section-center flex'>
 				<h1>перекрёсток</h1>
 				<div className='nav-links flex'>
-					<Links />
+					<Links
+					/>
 				</div>
 				<GiHamburgerMenu
 					className='burger'
-					onClick={() => setSidebarOpen(true)}
+					onClick={() => setSidebarOpen(!isSidebarOpen)}
 				/>
 			</div>
 			<hr />
