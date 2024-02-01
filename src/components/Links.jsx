@@ -11,7 +11,7 @@ const Links = ({ setSidebarOpen, isSidebarOpen }) => {
 						<li key={link.id} className='nav-link'>
 							<NavLink
 								to={link.url}
-								onClick={() => setSidebarOpen(!isSidebarOpen)}
+								onClick={() => setSidebarOpen(false)}
 							>
 								{link.text}
 							</NavLink>
@@ -40,7 +40,7 @@ const Wrapper = styled.div`
 		color: var(--clr-white);
 		padding: 2px 10px;
 		border-radius: 10px;
-		pointer-events: none;
+		/* pointer-events: none; */
 		background-color: var(--clr-rand);
 	}
 
