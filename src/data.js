@@ -1,11 +1,9 @@
+export const songsBgr =
+	'https://images.pexels.com/photos/9654712/pexels-photo-9654712.png?cs=srgb&dl=pexels-raquel-elise-de-moraes-9654712.jpg&fm=jpg&w=1920&h=1280&_gl=1*1w3wued*_ga*MTE0NDAwNTEwOS4xNzA2MDAyOTMy*_ga_8JE65Q40S6*MTcwNjg1MTYyMC43LjEuMTcwNjg1NDQyMC4wLjAuMA..'
+
 export const links = [
 	{ id: 1, text: 'главная', url: '/' },
-	{
-		id: 3,
-		text: 'песни',
-		url: '/songs',
-		url1: 'https://images.pexels.com/photos/9654712/pexels-photo-9654712.png?cs=srgb&dl=pexels-raquel-elise-de-moraes-9654712.jpg&fm=jpg&w=1920&h=1280&_gl=1*1w3wued*_ga*MTE0NDAwNTEwOS4xNzA2MDAyOTMy*_ga_8JE65Q40S6*MTcwNjg1MTYyMC43LjEuMTcwNjg1NDQyMC4wLjAuMA..',
-	},
+	{ id: 3, text: 'песни', url: '/songs' },
 	{ id: 2, text: 'видео', url: '/videos' },
 	{ id: 4, text: 'альбомы', url: '/albums' },
 	{ id: 5, text: 'новости', url: '/news' },
@@ -687,9 +685,12 @@ export const songs = [
 	},
 	{
 		id: 16,
+		url: 'https://kartinki.pics/uploads/posts/2023-12/1703051870_kartinki-pics-p-krasivii-snegopad-oboi-48.jpg',
 		src: '../../../src/assets/sounds/На_старый_город_падает_снег.mp3',
 		title: 'На старый город падает снег...',
-		text: `На старый город падает снег,
+		text: `НА СТАРЫЙ ГОРОД ПАДАЕТ СНЕГ...
+            
+      На старый город падает снег,
       Укрывая проспекты бульвары дома.
       У этого города имени нет, 
       Давно позабыты друзей адреса.
@@ -746,15 +747,17 @@ export const songs = [
 	},
 	{
 		id: 17,
+		url: 'https://kartinki.pics/uploads/posts/2022-12/1670469454_54-kartinkin-net-p-kosmicheskaya-lyubov-kartinki-instagram-66.jpg',
 		src: '',
 		title: 'Звёздный вальс',
 		text: `Звёздный вальс`,
 	},
 	{
 		id: 18,
-		src: '../../../src/assets/sounds/Перерождение.mp3',
-		title: 'Перерождение',
-		text: `Ой, то не вечер то не вечер,
+		url: 'https://kartinki.pics/uploads/posts/2021-04/1618101792_49-p-astronomiya-planeti-fentezi-51.jpg',
+		text: `ПЕРЕРОЖДЕНИЕ
+            
+      Ой, то не вечер то не вечер,
       Мне малым-мало спалось,
       Мне малым-мало спалось,
       Ой, да во сне привиделось...
