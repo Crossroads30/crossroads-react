@@ -1,9 +1,11 @@
-import { useParams } from 'react-router-dom'
+import { useNavigate, useParams } from 'react-router-dom'
 import styled from 'styled-components'
 import { songs } from '../data'
+import { Button } from 'antd'
 
 const Song = () => {
 	const { id } = useParams()
+	const navigate = useNavigate()
 
 	const singleSong = songs.find(song => song.id === Number(id))
 	const { src, url, text, title } = singleSong
@@ -14,6 +16,9 @@ const Song = () => {
 			<div className='section-center height'>
 				<div className='content flex-column'>
 					<p className='text'>{text}</p>
+					<button className='btn' type='button' onClick={() => navigate('/songs')}>
+						назад
+					</button>
 				</div>
 			</div>
 		</Wrapper>
@@ -27,12 +32,6 @@ const Wrapper = styled.main`
 		align-items: center;
 		padding: 0;
 	}
-	h3 {
-		color: var(--clr-text);
-		text-shadow: 2px 2px 4px var(--clr-black);
-		margin-bottom: 1rem;
-		padding: 0.5rem 1.5rem;
-	}
 	.text {
 		color: var(--clr-text);
 		background-color: var(--clr-grey-4);
@@ -40,7 +39,7 @@ const Wrapper = styled.main`
 		text-align: center;
 		font-size: 0.4rem;
 		padding: 2rem;
-		margin-bottom: 5vh;
+		margin-bottom: 3vh;
 	}
 	@media screen and (min-width: 425px) {
 		.text {
