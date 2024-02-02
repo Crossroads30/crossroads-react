@@ -1,12 +1,13 @@
 import styled from 'styled-components'
 import { songs } from '../data'
 import { Link } from 'react-router-dom'
-import background from '../assets/bgrs/songs-bgr.jpg'
-import background2 from '../assets/bgrs/songs-bgr2.jpg'
+import { songsBgr } from '../data'
 
 const Songs = () => {
 	return (
-		<Wrapper>
+		<Wrapper
+			style={{ background: `url(${songsBgr}) no-repeat center center / cover` }}
+		>
 			<div className='section section-center flex height'>
 				<ul className='songs flex-column'>
 					{songs.map(song => {
@@ -27,8 +28,7 @@ const Songs = () => {
 export default Songs
 
 const Wrapper = styled.main`
-	background: url(${background}) no-repeat center center;
-	background-size: cover;
+
 	.section {
 		justify-content: center;
 		align-items: flex-start;
@@ -93,7 +93,5 @@ const Wrapper = styled.main`
 		.song p {
 			font-size: calc(0.1vw + 0.3vh + 1vmin);
 		}
-		background: url(${background2}) no-repeat center center;
-		background-size: cover;
 	}
 `
