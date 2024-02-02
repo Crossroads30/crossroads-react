@@ -137,6 +137,21 @@ p {
 	flex-direction: column;
 	justify-content: space-between;
 }
+
+.btn {
+	margin-bottom: 3vh;
+	background-color: var(--clr-grey-4);
+	font-size: 1.2rem;
+	padding: 3px 10px;
+	width: 120px;
+	color: var(--clr-text);
+	cursor: pointer;
+}
+.btn:hover {
+	background-color: var(--clr-grey-2);
+	color: var(--clr-grey-9);
+}
+
 @media screen and (min-width: 1024px) {
 	.height {
 		min-height: calc(100svh - 4rem);
