@@ -1,6 +1,11 @@
 export const links = [
 	{ id: 1, text: 'главная', url: '/' },
-	{ id: 3, text: 'песни', url: '/songs' },
+	{
+		id: 3,
+		text: 'песни',
+		url: '/songs',
+		url1: 'https://images.pexels.com/photos/9654712/pexels-photo-9654712.png?cs=srgb&dl=pexels-raquel-elise-de-moraes-9654712.jpg&fm=jpg&w=1920&h=1280&_gl=1*1w3wued*_ga*MTE0NDAwNTEwOS4xNzA2MDAyOTMy*_ga_8JE65Q40S6*MTcwNjg1MTYyMC43LjEuMTcwNjg1NDQyMC4wLjAuMA..',
+	},
 	{ id: 2, text: 'видео', url: '/videos' },
 	{ id: 4, text: 'альбомы', url: '/albums' },
 	{ id: 5, text: 'новости', url: '/news' },
@@ -63,7 +68,7 @@ export const songs = [
 	{
 		id: 1,
 		src: '../../../src/assets/sounds/сhristmas.mp3',
-            url: 'https://images.pexels.com/photos/1708601/pexels-photo-1708601.jpeg?cs=srgb&dl=pexels-brett-sayles-1708601.jpg&fm=jpg&w=1920&h=1280&_gl=1*1o6pfh2*_ga*MTE0NDAwNTEwOS4xNzA2MDAyOTMy*_ga_8JE65Q40S6*MTcwNjgyMjQ5Ny42LjEuMTcwNjgyMzAyMi4wLjAuMA..',
+		url: 'https://images.pexels.com/photos/1708601/pexels-photo-1708601.jpeg?cs=srgb&dl=pexels-brett-sayles-1708601.jpg&fm=jpg&w=1920&h=1280&_gl=1*1o6pfh2*_ga*MTE0NDAwNTEwOS4xNzA2MDAyOTMy*_ga_8JE65Q40S6*MTcwNjgyMjQ5Ny42LjEuMTcwNjgyMzAyMi4wLjAuMA..',
 		title: 'Наконец-то Рождество!',
 		text: `Год прошёл и мы опять,
       Начинаем понимать,
@@ -114,6 +119,7 @@ export const songs = [
 	},
 	{
 		id: 2,
+		url: 'https://images.pexels.com/photos/748626/pexels-photo-748626.jpeg?cs=srgb&dl=pexels-george-desipris-748626.jpg&fm=jpg&w=1920&h=1080&_gl=1*14bnxsa*_ga*MTE0NDAwNTEwOS4xNzA2MDAyOTMy*_ga_8JE65Q40S6*MTcwNjg1MTYyMC43LjEuMTcwNjg1MjE0MC4wLjAuMA..',
 		src: '../../../src/assets/sounds/Человек_на_Луне.mp3',
 		title: 'Человек на луне',
 		text: `Я человек на луне,
@@ -143,9 +149,12 @@ export const songs = [
 	},
 	{
 		id: 3,
+		url: 'https://images.pexels.com/photos/6754/road-nature-lines-country.jpg?cs=srgb&dl=pexels-snapwire-6754.jpg&fm=jpg&w=1920&h=1440&_gl=1*1dld17a*_ga*MTE0NDAwNTEwOS4xNzA2MDAyOTMy*_ga_8JE65Q40S6*MTcwNjg1MTYyMC43LjEuMTcwNjg1MzQ4OS4wLjAuMA..',
 		src: '../../../src/assets/sounds/Перекрёсток(альтернативная_версия).mp3',
 		title: 'Перекрёсток',
-		text: `Я снова в дороге - вечный скиталец,
+		text: `ПЕРЕКРЁСТОК
+
+      Я снова в дороге - вечный скиталец,
       Друг направлений, попутчик ветров.
       Близится ночь и безумный свой танец
       Исполняют огни погребальных костров.
@@ -185,9 +194,12 @@ export const songs = [
 	},
 	{
 		id: 4,
+		url: 'https://images.pexels.com/photos/37730/sunset-boat-sea-ship-37730.jpeg?cs=srgb&dl=pexels-pixabay-37730.jpg&fm=jpg&w=1920&h=1280&_gl=1*1b4w2wv*_ga*MTE0NDAwNTEwOS4xNzA2MDAyOTMy*_ga_8JE65Q40S6*MTcwNjg1MTYyMC43LjEuMTcwNjg1MzkzNy4wLjAuMA..',
 		src: '../../../src/assets/sounds/Океан.mp3',
 		title: 'Океан',
-		text: `Расскажи мне океан
+		text: `ОКЕАН
+            
+      Расскажи мне океан
       кто в объятьях твоих у прибрежных скал.
       В зеркале небес созвездий сотни отражений,
       В чёрной глубине твоей пространство искажения.
@@ -239,9 +251,12 @@ export const songs = [
 	},
 	{
 		id: 5,
+		url: 'https://images.pexels.com/photos/9216959/pexels-photo-9216959.jpeg?cs=srgb&dl=pexels-wesley-caio-9216959.jpg&fm=jpg&w=1920&h=1752&_gl=1*uuw8yr*_ga*MTE0NDAwNTEwOS4xNzA2MDAyOTMy*_ga_8JE65Q40S6*MTcwNjg1MTYyMC43LjEuMTcwNjg1NDUyMC4wLjAuMA..',
 		src: '../../../src/assets/sounds/Колыбельная.mp3',
 		title: 'Колыбельная',
-		text: `Баю-бай, мой милый ангел засыпай,
+		text: `КОЛЫБЕЛЬНАЯ
+            
+      Баю-бай, мой милый ангел засыпай,
       Вольется в разум теплый рай,
       Лишь сон войдет украдкой в дом.
       
@@ -282,20 +297,24 @@ export const songs = [
 	},
 	{
 		id: 6,
+		url: 'https://images.pexels.com/photos/586030/pexels-photo-586030.jpeg?cs=srgb&dl=pexels-spacex-586030.jpg&fm=jpg&w=1920&h=1280&_gl=1*1rruoqb*_ga*MTE0NDAwNTEwOS4xNzA2MDAyOTMy*_ga_8JE65Q40S6*MTcwNjg1MTYyMC43LjEuMTcwNjg1NDY2OS4wLjAuMA..',
 		src: '../../../src/assets/sounds/Межпланетный_экспресс.mp3',
 		title: 'Межпланетный экспресс',
 		text: `Межпланетный экспресс`,
 	},
 	{
 		id: 7,
+		url: 'https://kartinki.pics/uploads/posts/2022-08/1661452207_6-kartinkin-net-p-zloi-shaman-oboi-krasivo-7.jpg',
 		src: '../../../src/assets/sounds/Под_звёздами_вселенной.mp3',
 		title: 'Под звёздами вселенной',
-		text: `Старое шоссе уводит в небо, 
+		text: `ПОД ЗВЁЗДАМИ ВСЕЛЕННОЙ
+      
+      Старое шоссе уводит в небо, 
       За горизонт хрустальных гор,
       Где мир безмолвия и снега,
       Душа небес - большой шатер.
       
-      Там предки стонут под ногами,
+      Тут предки стонут под ногами,
       Безумцы пляшут на холмах,
       Шаман бормочет заклинания,
       И все сильней бьет в барабан.
@@ -307,8 +326,8 @@ export const songs = [
       Один под звездами вселенной!
       
       Бушует грозная планета,
-      Воды смывают города.
-      И люди смотрят в небо ждут ответов,
+      Воды смывают города,
+      И люди смотрят в небо, ждут ответов,
       Но небеса умолкли навсегда.
       
       Ты дикое дитя природы,
@@ -324,9 +343,12 @@ export const songs = [
 	},
 	{
 		id: 8,
+		url: 'https://images.pexels.com/photos/10338831/pexels-photo-10338831.jpeg?cs=srgb&dl=pexels-istvan-szabo-10338831.jpg&fm=jpg&w=1920&h=1280&_gl=1*1v6be9f*_ga*MTE0NDAwNTEwOS4xNzA2MDAyOTMy*_ga_8JE65Q40S6*MTcwNjg1MTYyMC43LjEuMTcwNjg1NTc2NC4wLjAuMA..',
 		src: '../../../src/assets/sounds/Кухня_любви.mp3',
 		title: 'Кухня любви',
-		text: `Часы сказали время спать,
+		text: `КУХНЯ ЛЮБВИ
+            
+      Часы сказали время спать,
       Ведь завтра рано нам вставать.
       Вползать в сонное утро, 
       И в медленный автобус.
@@ -363,9 +385,12 @@ export const songs = [
 	},
 	{
 		id: 9,
+		url: 'https://images.pexels.com/photos/111085/pexels-photo-111085.jpeg?cs=srgb&dl=pexels-bradley-hook-111085.jpg&fm=jpg&w=1920&h=1292&_gl=1*1cdpydt*_ga*MTE0NDAwNTEwOS4xNzA2MDAyOTMy*_ga_8JE65Q40S6*MTcwNjg1MTYyMC43LjEuMTcwNjg1NjEyNC4wLjAuMA..',
 		src: '../../../src/assets/sounds/Когда_закончится_лето.mp3',
 		title: 'Когда закончится лето',
-		text: `Лета почти уже нет,
+		text: `КОГДА ЗАКОНЧИТСЯ ЛЕТО
+            
+      Лета почти уже нет,
       Прощайте славные дни,
       Друзья за морями скрываются где-то, 
       И вот мы с тобою одни.
@@ -414,9 +439,12 @@ export const songs = [
 	},
 	{
 		id: 10,
+		url: 'https://images.pexels.com/photos/573258/pexels-photo-573258.jpeg?cs=srgb&dl=pexels-matheus-bertelli-573258.jpg&fm=jpg&w=1920&h=1280&_gl=1*z0fkbi*_ga*MTE0NDAwNTEwOS4xNzA2MDAyOTMy*_ga_8JE65Q40S6*MTcwNjg1MTYyMC43LjEuMTcwNjg1NjMxMS4wLjAuMA..',
 		src: '../../../src/assets/sounds/Сон_Алеси.mp3',
 		title: 'Сон Алеси',
-		text: `Луч заката на подушке,
+		text: `СОН АЛЕСИ
+            
+      Луч заката на подушке,
       День прошедший стертый в прах.
       Крепко спят твои игрушки,
       Им уже не ведом страх.
@@ -461,9 +489,12 @@ export const songs = [
 	},
 	{
 		id: 11,
+		url: 'https://images.pexels.com/photos/556662/pexels-photo-556662.jpeg?cs=srgb&dl=pexels-luizclas-556662.jpg&fm=jpg&w=1920&h=2401&_gl=1*gajkg1*_ga*MTE0NDAwNTEwOS4xNzA2MDAyOTMy*_ga_8JE65Q40S6*MTcwNjg1MTYyMC43LjEuMTcwNjg1NjkyMi4wLjAuMA..',
 		src: '../../../src/assets/sounds/Я_всё_ещё_люблю_тебя.mp3',
 		title: 'Я всё ещё люблю тебя...',
-		text: `Помнишь тот зимний вечер,
+		text: `Я ВСЁ ЕЩЁ ЛЮБЛЮ ТЕБЯ...
+            
+      Помнишь тот зимний вечер,
       Ты была одна, 
       И вдруг телефонный звонок,
       Что так долго ждала.
@@ -519,9 +550,12 @@ export const songs = [
 	},
 	{
 		id: 12,
+		url: 'https://kartinki.pics/uploads/posts/2022-12/1670500368_1-kartinkin-net-p-kartinki-marionetki-instagram-2.jpg',
 		src: '../../../src/assets/sounds/Люди_как_куклы.mp3',
 		title: 'Люди как куклы',
-		text: `Люди как куклы, куклы как люди, 
+		text: `ЛЮДИ КАК КУКЛЫ
+            
+      Люди как куклы, куклы как люди, 
       Тысячи лиц - фарфоровые судьбы.
       Кукла рождаясь с бесцветной душой,
       Желает стать яркой, цвет выбери свой.
@@ -558,9 +592,12 @@ export const songs = [
 	},
 	{
 		id: 13,
+		url: 'https://images.pexels.com/photos/301599/pexels-photo-301599.jpeg?cs=srgb&dl=pexels-pixabay-301599.jpg&fm=jpg&w=1920&h=1080&_gl=1*1svtbp2*_ga*MTE0NDAwNTEwOS4xNzA2MDAyOTMy*_ga_8JE65Q40S6*MTcwNjg2MDUwMy44LjEuMTcwNjg2MTQyOC4wLjAuMA..',
 		src: '../../../src/assets/sounds/Солнечный_Король.mp3',
 		title: 'Солнечный король',
-		text: `Я солнечный король,
+		text: `СОЛНЕЧНЫЙ КОРОЛЬ
+            
+      Я солнечный король,
       Расцветут сады под моей рукой.
       Никогда не видя тьмы,  
       Я иду пешком вокруг земли.
@@ -607,15 +644,18 @@ export const songs = [
 	},
 	{
 		id: 14,
-		src: '../../../src/assets/sounds/Отель_разбитых_сердец.mp3',
+		url: 'https://kartinki.pics/uploads/posts/2022-12/1671800556_kartinkin-net-p-lyubov-i-nenavist-kartinki-pinterest-3.jpg',
 		title: 'Отель разбитых сердец',
 		text: `Отель разбитых сердец`,
 	},
 	{
 		id: 15,
+		url: 'https://kartinki.pics/uploads/posts/2022-12/thumbs/1671755786_kartinkin-net-p-krasivie-kartinki-pustini-vkontakte-15.jpg',
 		src: '../../../src/assets/sounds/Караван_мечты.mp3',
 		title: 'Караван мечты',
-		text: `Забери меня мой караван мечты,
+		text: `КАРАВАН МЕЧТЫ
+            
+      Забери меня мой караван мечты,
       В страны с ветром где обвенчалась ты,
       На лазурных пляжах золотой песок,
       Океан небес у самых твоих ног.
