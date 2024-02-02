@@ -13,7 +13,6 @@ const Song = () => {
 		>
 			<div className='section-center height'>
 				<div className='content flex-column'>
-					<h3>{title}</h3>
 					<p className='text'>{text}</p>
 				</div>
 			</div>
@@ -63,8 +62,8 @@ const Wrapper = styled.main`
 		.text {
 			font-size: 1rem;
 		}
-    h3 {
-      font-size: 1.5rem;
-    }
+		h3 {
+			font-size: 1.5rem;
+		}
 	}
 `
