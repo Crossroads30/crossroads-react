@@ -1,7 +1,7 @@
 import { useNavigate, useParams } from 'react-router-dom'
 import styled from 'styled-components'
 import { songs } from '../data'
-import AudioControls from '../components/AudioControls'
+import AudioPlayer from '../components/AudioPlayer'
 
 const Song = () => {
 	const { id } = useParams()
@@ -15,7 +15,7 @@ const Song = () => {
 			style={{ background: `url(${url}) no-repeat center center / cover` }}
 		>
 			<div className='section-center height'>
-				<AudioControls />
+				<AudioPlayer />
 				<div className='content flex-column'>
 					<p className='text'>{text}</p>
 					<button
