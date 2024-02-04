@@ -61,9 +61,9 @@ const AudioControls = () => {
 
 	const onScrubEnd = () => {
 		// If not already playing, start
-		if (!isPlaying) {
-			dispatch(setPlay())
-		}
+		// if (!isPlaying) {
+		// 	dispatch(setPlay())
+		// }
 		startTimer()
 	}
 
