@@ -3,16 +3,13 @@ import { FaRegCirclePause } from 'react-icons/fa6'
 import styled from 'styled-components'
 import track from '../assets/music/track-1.mp3'
 import { useDispatch, useSelector } from 'react-redux'
-import {
-	setPause,
-	setPlay,
-} from '../features/audio/audioSlice'
+import { setPause, setPlay } from '../features/audio/audioSlice'
 import { useEffect, useRef, useState } from 'react'
 
 const AudioControls = () => {
 	const [trackProgress, setTrackProgress] = useState(0)
 
-	const { isPlaying} = useSelector(store => store.audio)
+	const { isPlaying } = useSelector(store => store.audio)
 	const dispatch = useDispatch()
 
 	const audioRef = useRef(new Audio(track))
@@ -67,6 +64,7 @@ const AudioControls = () => {
 		startTimer()
 	}
 
+
 	return (
 		<Wrapper>
 			{!isPlaying ? (
@@ -102,5 +100,57 @@ const Wrapper = styled.div`
 		color: var(--clr-grey-6);
 		width: 40px;
 		height: 40px;
+	}
+
+	input[type='range'] {
+		/* removing default appearance */
+		-webkit-appearance: none;
+		appearance: none;
+		/* creating a custom design */
+		width: 100%;
+		cursor: pointer;
+		outline: none;
+		/*  slider progress trick  */
+		overflow: hidden;
+		border-radius: 16px;
+	}
+
+	/* Track: webkit browsers */
+	input[type='range']::-webkit-slider-runnable-track {
+		height: 8px;
+		background: var(--clr-grey-6);
+		border-radius: 16px;
+	}
+
+	/* Track: Mozilla Firefox */
+	input[type='range']::-moz-range-track {
+		height: 8px;
+		background: var(--clr-grey-6);
+		border-radius: 16px;
+	}
+
+	/* Thumb: webkit */
+	input[type='range']::-webkit-slider-thumb {
+		/* removing default appearance */
+		-webkit-appearance: none;
+		appearance: none;
+		/* creating a custom design */
+		height: 8px;
+		width: 8px;
+		background-color: #fff;
+		border-radius: 50%;
+		/* border: 1px solid #fff; */
+		/*  slider progress trick  */
+		box-shadow: -407px 0 0 400px #f50;
+	}
+
+	/* Thumb: Firefox */
+	input[type='range']::-moz-range-thumb {
+		height: 8px;
+		width: 8px;
+		background-color: #fff;
+		border-radius: 50%;
+		/*  slider progress trick  */
+		box-shadow: -407px 0 0 400px #f50;
 	}
 `
