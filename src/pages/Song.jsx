@@ -2,11 +2,14 @@ import { useNavigate, useParams } from 'react-router-dom'
 import styled from 'styled-components'
 import { songs } from '../data'
 import AudioPlayer from '../components/AudioPlayer'
+import { useState } from 'react'
+import { GiSoundOn } from 'react-icons/gi'
 
 const Song = () => {
+	const [isAudio, setIsAudio] = useState(false)
 	const { id } = useParams()
 	const navigate = useNavigate()
-	
+
 	const singleSong = songs.find(song => song.id === Number(id))
 	const { src, url, text, title } = singleSong
 
@@ -15,16 +18,19 @@ const Song = () => {
 			style={{ background: `url(${url}) no-repeat center center / cover` }}
 		>
 			<div className='section-center height'>
-				<AudioPlayer />
+				{isAudio && <AudioPlayer isAudio={isAudio} />}
 				<div className='content flex-column'>
-					<p className='text'>{text}</p>
-					<button
-						className='btn'
-						type='button'
-						onClick={() => navigate('/songs')}
-					>
-						назад
-					</button>
+					<div className='text-container flex-column'>
+						<GiSoundOn className='sound' onClick={() => setIsAudio(!isAudio)} />
+						<p className='text'>{text}</p>
+						<button
+							className='btn back-btn'
+							type='button'
+							onClick={() => navigate('/songs')}
+						>
+							назад
+						</button>
+					</div>
 				</div>
 			</div>
 		</Wrapper>
@@ -38,6 +44,10 @@ const Wrapper = styled.main`
 		align-items: center;
 		padding: 0;
 	}
+	.text-container {
+		background-color: var(--clr-grey-3);
+		margin-bottom: 3vh;
+	}
 	.text {
 		color: var(--clr-text);
 		background-color: var(--clr-grey-4);
@@ -46,6 +56,20 @@ const Wrapper = styled.main`
 		font-size: 0.4rem;
 		padding: 2rem;
 		margin-bottom: 3vh;
+	}
+	.sound {
+		height: 40px;
+		width: 40px;
+		align-self: start;
+		color: var(--clr-grey-7);
+		margin-bottom: 1rem;
+		cursor: pointer;
+		padding: 5px;
+		border: 1px solid 
+	}
+
+	.back-btn {
+		align-self: center;
 	}
 	@media screen and (min-width: 425px) {
 		.text {
