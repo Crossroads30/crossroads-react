@@ -6,18 +6,20 @@ import { FaRegCirclePause } from 'react-icons/fa6'
 
 const audio = new Audio(track)
 
-function AudioPlayer() {
+function AudioPlayer({ isAudio }) {
 	const [isPlaying, setIsPlaying] = useState(false)
 	const [currentTime, setCurrentTime] = useState(0)
 	const [duration, setDuration] = useState(0)
-
+	
 	const audioRef = useRef(audio)
+	
 
-	useEffect(() => {
-		audio.addEventListener('loadedmetadata', e => {
-			setDuration(e.target.duration)
-		})
-	}, [])
+	// useEffect(() => {
+	// 	const audio = new Audio(track)
+	// 	audio.addEventListener('timeupdate', function (e) {	 
+	// 		return setDuration(e.target.value.duration)
+	// 	})
+	// }, [isAudio])
 
 	useEffect(() => {
 		if (isPlaying) {
@@ -37,7 +39,7 @@ function AudioPlayer() {
 		setCurrentTime(audioRef.current.currentTime)
 	}
 
-	const formatDuration = (durationSeconds) => {
+	const formatDuration = durationSeconds => {
 		const minutes = Math.floor(durationSeconds / 60)
 		const seconds = Math.floor(durationSeconds % 60)
 		const formattedSeconds = seconds.toString().padStart(2, '0')
@@ -93,20 +95,23 @@ const Wrapper = styled.div`
 	margin-bottom: 1rem;
 	position: fixed;
 	top: 6rem;
-	width: 140px;
+	width: 145px;
 	.play,
 	.pause {
-		color: var(--clr-grey-6);
+		color: var(--clr-grey-7);
 		width: 40px;
 		height: 40px;
 		cursor: pointer;
 	}
 	.control {
-		color: var(--clr-grey-6);
+		color: var(--clr-grey-7);
 		margin-bottom: 10px;
+		background-color: var(--clr-grey-3);
+		padding: 5px 8px 5px 5px;
+		border-radius: 20px;
 	}
 	.time {
-		width: 78px;
+		width: 80px;
 	}
 	input[type='range'] {
 		/* removing default appearance */
