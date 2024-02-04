@@ -1,22 +1,28 @@
 import { useNavigate, useParams } from 'react-router-dom'
 import styled from 'styled-components'
 import { songs } from '../data'
-import { Button } from 'antd'
+import AudioControls from '../components/AudioControls'
 
 const Song = () => {
 	const { id } = useParams()
 	const navigate = useNavigate()
-
+	
 	const singleSong = songs.find(song => song.id === Number(id))
 	const { src, url, text, title } = singleSong
+
 	return (
 		<Wrapper
 			style={{ background: `url(${url}) no-repeat center center / cover` }}
 		>
 			<div className='section-center height'>
+				<AudioControls />
 				<div className='content flex-column'>
 					<p className='text'>{text}</p>
-					<button className='btn' type='button' onClick={() => navigate('/songs')}>
+					<button
+						className='btn'
+						type='button'
+						onClick={() => navigate('/songs')}
+					>
 						назад
 					</button>
 				</div>
