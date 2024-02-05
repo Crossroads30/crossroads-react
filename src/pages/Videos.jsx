@@ -5,12 +5,18 @@ import Modal from '../components/Modal'
 import { useState } from 'react'
 
 const Videos = () => {
-  const [isModal , setIsModal] = useState(false)
+	const [isModal, setIsModal] = useState(false)
+	const [modalUrl, setModalUrl] = useState('')
 
 	return (
 		<Wrapper>
 			<div className='height section-center section'>
-				<Modal isModal={isModal} setIsModal={setIsModal} />
+				<Modal
+					isModal={isModal}
+					setIsModal={setIsModal}
+					url={modalUrl}
+					clearUrl={setModalUrl}
+				/>
 				<div className='content'>
 					{videos.map(video => {
 						const { id, name, url, src } = video
@@ -21,7 +27,10 @@ const Videos = () => {
 								style={{
 									background: `url(${src}) no-repeat center center / cover`,
 								}}
-								onClick={() => setIsModal(true)}
+								onClick={() => {
+									setIsModal(true)
+									setModalUrl(url)
+								}}
 							>
 								<h3>{name}</h3>
 							</div>
@@ -40,7 +49,7 @@ const Wrapper = styled.main`
 	.section {
 		display: flex;
 		align-items: center;
-    justify-content: center;
+		justify-content: center;
 	}
 	.content {
 		margin: 5rem 0 5rem;
@@ -50,14 +59,14 @@ const Wrapper = styled.main`
 		justify-items: center;
 		row-gap: 1rem;
 		column-gap: 2rem;
-    width: 100%
+		width: 100%;
 	}
 	.video {
 		display: flex;
 		width: 14rem;
 		height: 9rem;
 		padding: 5px;
-    cursor: pointer;
+		cursor: pointer;
 	}
 	h3 {
 		color: var(--clr-grey-10);
