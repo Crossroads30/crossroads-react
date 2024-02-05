@@ -1,7 +1,17 @@
 import styled from 'styled-components'
 import { SlClose } from 'react-icons/sl'
+import { useEffect } from 'react'
 
 const Modal = ({ isModal, setIsModal, url, clearUrl }) => {
+
+		useEffect(() => {
+			if (isModal) {
+				document.body.style.overflow = 'hidden'
+			} else {
+				document.body.style.overflow = 'unset'
+			}
+		}, [isModal])
+
 	return (
 		<Wrapper>
 			<div className={isModal ? 'container show-modal' : 'container'}>

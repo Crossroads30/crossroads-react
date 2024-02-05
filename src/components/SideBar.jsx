@@ -1,9 +1,18 @@
 import styled from 'styled-components'
 import Links from './Links'
 import { CgClose } from 'react-icons/cg'
-import React from 'react'
+import React, { useEffect } from 'react'
 
 const SideBar = ({ setSidebarOpen, isSidebarOpen }) => {
+
+	useEffect(() => {
+		if (isSidebarOpen) {
+			document.body.style.overflow = 'hidden'
+		} else {
+			document.body.style.overflow = 'unset'
+		}
+	}, [isSidebarOpen])
+
 	return (
 		<Wrapper>
 			<div
