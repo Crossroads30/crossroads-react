@@ -1,11 +1,16 @@
 import styled from 'styled-components'
 import { videos } from '../data'
 import background from '../assets/bgrs/video-bgr.jpg'
+import Modal from '../components/Modal'
+import { useState } from 'react'
 
 const Videos = () => {
+  const [isModal , setIsModal] = useState(false)
+
 	return (
 		<Wrapper>
 			<div className='height section-center section'>
+				<Modal isModal={isModal} setIsModal={setIsModal} />
 				<div className='content'>
 					{videos.map(video => {
 						const { id, name, url, src } = video
@@ -16,6 +21,7 @@ const Videos = () => {
 								style={{
 									background: `url(${src}) no-repeat center center / cover`,
 								}}
+								onClick={() => setIsModal(true)}
 							>
 								<h3>{name}</h3>
 							</div>
@@ -51,6 +57,7 @@ const Wrapper = styled.main`
 		width: 14rem;
 		height: 9rem;
 		padding: 5px;
+    cursor: pointer;
 	}
 	h3 {
 		color: var(--clr-grey-10);
