@@ -1,25 +1,22 @@
 import React, { useState, useRef, useEffect } from 'react'
 import styled from 'styled-components'
-import track from '../assets/music/track-1.mp3'
 import { FaRegCirclePlay } from 'react-icons/fa6'
 import { FaRegCirclePause } from 'react-icons/fa6'
 
-const audio = new Audio(track)
 
-function AudioPlayer({ isAudio }) {
+function AudioPlayer({ isAudio, source }) {
 	const [isPlaying, setIsPlaying] = useState(false)
 	const [currentTime, setCurrentTime] = useState(0)
 	const [duration, setDuration] = useState(0)
 	
+	const audio = new Audio(source)
 	const audioRef = useRef(audio)
 	
-
-	// useEffect(() => {
-	// 	const audio = new Audio(track)
-	// 	audio.addEventListener('timeupdate', function (e) {	 
-	// 		return setDuration(e.target.value.duration)
-	// 	})
-	// }, [isAudio])
+	useEffect(() => {
+		audio.addEventListener('timeupdate', function (e) {	 
+			return setDuration(e.target.value.duration)
+		})
+	}, [isAudio])
 
 	useEffect(() => {
 		if (isPlaying) {
@@ -84,7 +81,7 @@ function AudioPlayer({ isAudio }) {
 				value={currentTime}
 				onChange={handleSeek}
 			/>
-			<audio ref={audioRef} src={track} />
+			<audio id='audio' preload='metadata' ref={audioRef} src={source} />
 		</Wrapper>
 	)
 }

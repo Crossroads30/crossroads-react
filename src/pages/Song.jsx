@@ -18,7 +18,7 @@ const Song = () => {
 			style={{ background: `url(${url}) no-repeat center center / cover` }}
 		>
 			<div className='section-center height'>
-				{isAudio && <AudioPlayer isAudio={isAudio} />}
+				{isAudio && <AudioPlayer isAudio={isAudio} source={src} />}
 				<div className='content flex-column'>
 					<div className='text-container flex-column'>
 						<GiSoundOn className='sound' onClick={() => setIsAudio(!isAudio)} />
