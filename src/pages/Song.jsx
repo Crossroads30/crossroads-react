@@ -18,15 +18,23 @@ const Song = () => {
 			style={{ background: `url(${url}) no-repeat center center / cover` }}
 		>
 			<div className='section-center height'>
-				{isAudio && <AudioPlayer isAudio={isAudio} source={src} />}
 				<div className='content flex-column'>
 					<div className='text-container flex-column'>
-						<GiSoundOn className='sound' onClick={() => setIsAudio(!isAudio)} />
+						<div className='player flex'>
+							<GiSoundOn
+								className='sound'
+								onClick={() => setIsAudio(!isAudio)}
+							/>
+							{isAudio && <AudioPlayer isAudio={isAudio} source={src} />}
+						</div>
 						<p className='text'>{text}</p>
 						<button
 							className='btn back-btn'
 							type='button'
-							onClick={() => navigate('/songs')}
+							onClick={() => {
+								navigate('/songs')
+								setIsAudio(false)
+							}}
 						>
 							назад
 						</button>
@@ -58,14 +66,14 @@ const Wrapper = styled.main`
 		margin-bottom: 3vh;
 	}
 	.sound {
-		height: 40px;
-		width: 40px;
+		height: 30px;
+		width: 30px;
 		align-self: start;
 		color: var(--clr-grey-7);
 		margin-bottom: 1rem;
 		cursor: pointer;
 		padding: 5px;
-		border: 1px solid 
+		border: 1px solid;
 	}
 
 	.back-btn {
@@ -74,6 +82,10 @@ const Wrapper = styled.main`
 	@media screen and (min-width: 425px) {
 		.text {
 			font-size: 0.6rem;
+		}
+		.sound {
+			height: 40px;
+			width: 40px;
 		}
 	}
 	@media screen and (min-width: 768px) {
