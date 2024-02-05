@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 import { videos } from '../data'
-import background from '../assets/bgrs/video-bgr.jpg'
+import background from '../assets/bgrs/video-bgr5.jpg'
 import Modal from '../components/Modal'
 import { useState } from 'react'
 
