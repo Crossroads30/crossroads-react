@@ -1,20 +1,26 @@
 import styled from 'styled-components'
 import { SlClose } from 'react-icons/sl'
 
-const Modal = ({ isModal, setIsModal }) => {
+const Modal = ({ isModal, setIsModal, url, clearUrl }) => {
 	return (
 		<Wrapper>
 			<div className={isModal ? 'container show-modal' : 'container'}>
 				<div className='modal-wrapper '>
-					<SlClose className='close-modal' onClick={()=>setIsModal(false)} />
+					<SlClose
+						className='close-modal'
+						onClick={() => {
+							setIsModal(false)
+							clearUrl('')
+						}}
+					/>
 					<div className='modal-content'>
 						<iframe
 							className='iframe'
-							src='https://www.youtube.com/embed/fyMYqtFbAeY?autoplay=1'
+							src={url}
 							title='YouTube video player'
 							frameBorder='0'
 							allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share'
-							allowFullScreen='0'
+							allowFullScreen='1'
 						></iframe>
 					</div>
 				</div>
