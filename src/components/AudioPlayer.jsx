@@ -3,20 +3,13 @@ import styled from 'styled-components'
 import { FaRegCirclePlay } from 'react-icons/fa6'
 import { FaRegCirclePause } from 'react-icons/fa6'
 
-
 function AudioPlayer({ isAudio, source }) {
 	const [isPlaying, setIsPlaying] = useState(false)
 	const [currentTime, setCurrentTime] = useState(0)
 	const [duration, setDuration] = useState(0)
-	
+
 	const audio = new Audio(source)
 	const audioRef = useRef(audio)
-	
-	useEffect(() => {
-		audio.addEventListener('timeupdate', function (e) {	 
-			return setDuration(e.target.value.duration)
-		})
-	}, [isAudio])
 
 	useEffect(() => {
 		if (isPlaying) {
@@ -89,23 +82,18 @@ function AudioPlayer({ isAudio, source }) {
 export default AudioPlayer
 
 const Wrapper = styled.div`
-	margin-bottom: 1rem;
-	position: fixed;
-	top: 6rem;
-	width: 145px;
+	width: 120px;
+	margin-right: 5px;
 	.play,
 	.pause {
 		color: var(--clr-grey-7);
-		width: 40px;
-		height: 40px;
+		width: 25px;
+		height: 25px;
 		cursor: pointer;
 	}
 	.control {
 		color: var(--clr-grey-7);
-		margin-bottom: 10px;
-		background-color: var(--clr-grey-3);
-		padding: 5px 8px 5px 5px;
-		border-radius: 20px;
+		height: 20px;
 	}
 	.time {
 		width: 80px;
@@ -125,7 +113,7 @@ const Wrapper = styled.div`
 
 	/* Track: webkit browsers */
 	input[type='range']::-webkit-slider-runnable-track {
-		height: 8px;
+		height: 4px;
 		background: var(--clr-grey-6);
 		border-radius: 16px;
 	}
@@ -160,5 +148,50 @@ const Wrapper = styled.div`
 		border-radius: 50%;
 		/*  slider progress trick  */
 		box-shadow: -407px 0 0 400px #f50;
+	}
+	@media screen and (min-width: 425px) {
+		.play,
+		.pause {
+			color: var(--clr-grey-7);
+			width: 30px;
+			height: 30px;
+			cursor: pointer;
+		}
+		.control {
+			height: 30px;
+		}
+	}
+	@media screen and (min-width: 768px) {
+		.content {
+			margin-top: calc(50px + 4vh);
+		}
+		.time {
+			width: 80px;
+		}
+	}
+	@media screen and (min-width: 1024px) {
+		margin-bottom: 1rem;
+		position: fixed;
+		top: 5.8rem;
+		left: 4.5rem;
+		width: 145px;
+		.control {
+			color: var(--clr-grey-7);
+			margin-bottom: 10px;
+			background-color: var(--clr-grey-3);
+			padding: 5px 8px 5px 5px;
+			border-radius: 25px;
+			height: 50px;
+		}
+		.play,
+		.pause {
+			color: var(--clr-grey-7);
+			width: 40px;
+			height: 40px;
+			cursor: pointer;
+		}
+		input[type='range']::-webkit-slider-runnable-track {
+			height: 8px;
+		}
 	}
 `
