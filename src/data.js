@@ -65,9 +65,9 @@ export const videos = [
 export const songs = [
 	{
 		id: 1,
-		src: '../../../src/assets/sounds/сhristmas.mp3',
 		url: 'https://images.pexels.com/photos/1708601/pexels-photo-1708601.jpeg?cs=srgb&dl=pexels-brett-sayles-1708601.jpg&fm=jpg&w=1920&h=1280&_gl=1*1o6pfh2*_ga*MTE0NDAwNTEwOS4xNzA2MDAyOTMy*_ga_8JE65Q40S6*MTcwNjgyMjQ5Ny42LjEuMTcwNjgyMzAyMi4wLjAuMA..',
 		title: 'Наконец-то Рождество!',
+		src: '/src/assets/music/track-1.mp3',
 		text: `НАКОНЕЦ - ТО РОЖДЕСТВО!
             
       Год прошёл и мы опять,
@@ -120,7 +120,7 @@ export const songs = [
 	{
 		id: 2,
 		url: 'https://images.pexels.com/photos/748626/pexels-photo-748626.jpeg?cs=srgb&dl=pexels-george-desipris-748626.jpg&fm=jpg&w=1920&h=1080&_gl=1*14bnxsa*_ga*MTE0NDAwNTEwOS4xNzA2MDAyOTMy*_ga_8JE65Q40S6*MTcwNjg1MTYyMC43LjEuMTcwNjg1MjE0MC4wLjAuMA..',
-		src: '../../../src/assets/sounds/Человек_на_Луне.mp3',
+		src: '/src/assets/music/track-2.mp3',
 		title: 'Человек на луне',
 		text: `Я человек на луне,
       Я знаю всё что ты видишь во сне, 
@@ -150,7 +150,7 @@ export const songs = [
 	{
 		id: 3,
 		url: 'https://images.pexels.com/photos/6754/road-nature-lines-country.jpg?cs=srgb&dl=pexels-snapwire-6754.jpg&fm=jpg&w=1920&h=1440&_gl=1*1dld17a*_ga*MTE0NDAwNTEwOS4xNzA2MDAyOTMy*_ga_8JE65Q40S6*MTcwNjg1MTYyMC43LjEuMTcwNjg1MzQ4OS4wLjAuMA..',
-		src: '../../../src/assets/sounds/Перекрёсток(альтернативная_версия).mp3',
+		src: '/src/assets/music/track-3.mp3',
 		title: 'Перекрёсток',
 		text: `ПЕРЕКРЁСТОК
 
@@ -195,7 +195,7 @@ export const songs = [
 	{
 		id: 4,
 		url: 'https://images.pexels.com/photos/37730/sunset-boat-sea-ship-37730.jpeg?cs=srgb&dl=pexels-pixabay-37730.jpg&fm=jpg&w=1920&h=1280&_gl=1*1b4w2wv*_ga*MTE0NDAwNTEwOS4xNzA2MDAyOTMy*_ga_8JE65Q40S6*MTcwNjg1MTYyMC43LjEuMTcwNjg1MzkzNy4wLjAuMA..',
-		src: '../../../src/assets/sounds/Океан.mp3',
+		src: '/src/assets/music/track-4.mp3',
 		title: 'Океан',
 		text: `ОКЕАН
             
@@ -252,7 +252,7 @@ export const songs = [
 	{
 		id: 5,
 		url: 'https://images.pexels.com/photos/9216959/pexels-photo-9216959.jpeg?cs=srgb&dl=pexels-wesley-caio-9216959.jpg&fm=jpg&w=1920&h=1752&_gl=1*uuw8yr*_ga*MTE0NDAwNTEwOS4xNzA2MDAyOTMy*_ga_8JE65Q40S6*MTcwNjg1MTYyMC43LjEuMTcwNjg1NDUyMC4wLjAuMA..',
-		src: '../../../src/assets/sounds/Колыбельная.mp3',
+		src: '/src/assets/music/track-5.mp3',
 		title: 'Колыбельная',
 		text: `КОЛЫБЕЛЬНАЯ
             
@@ -298,14 +298,14 @@ export const songs = [
 	{
 		id: 6,
 		url: 'https://images.pexels.com/photos/586030/pexels-photo-586030.jpeg?cs=srgb&dl=pexels-spacex-586030.jpg&fm=jpg&w=1920&h=1280&_gl=1*1rruoqb*_ga*MTE0NDAwNTEwOS4xNzA2MDAyOTMy*_ga_8JE65Q40S6*MTcwNjg1MTYyMC43LjEuMTcwNjg1NDY2OS4wLjAuMA..',
-		src: '../../../src/assets/sounds/Межпланетный_экспресс.mp3',
+		src: '/src/assets/music/track-6.mp3',
 		title: 'Межпланетный экспресс',
 		text: `Межпланетный экспресс`,
 	},
 	{
 		id: 7,
 		url: 'https://kartinki.pics/uploads/posts/2022-08/1661452207_6-kartinkin-net-p-zloi-shaman-oboi-krasivo-7.jpg',
-		src: '../../../src/assets/sounds/Под_звёздами_вселенной.mp3',
+		src: '/src/assets/music/track-7.mp3',
 		title: 'Под звёздами вселенной',
 		text: `ПОД ЗВЁЗДАМИ ВСЕЛЕННОЙ
       
@@ -344,7 +344,7 @@ export const songs = [
 	{
 		id: 8,
 		url: 'https://images.pexels.com/photos/10338831/pexels-photo-10338831.jpeg?cs=srgb&dl=pexels-istvan-szabo-10338831.jpg&fm=jpg&w=1920&h=1280&_gl=1*1v6be9f*_ga*MTE0NDAwNTEwOS4xNzA2MDAyOTMy*_ga_8JE65Q40S6*MTcwNjg1MTYyMC43LjEuMTcwNjg1NTc2NC4wLjAuMA..',
-		src: '../../../src/assets/sounds/Кухня_любви.mp3',
+		src: '/src/assets/music/track-8.mp3',
 		title: 'Кухня любви',
 		text: `КУХНЯ ЛЮБВИ
             
@@ -386,7 +386,7 @@ export const songs = [
 	{
 		id: 9,
 		url: 'https://images.pexels.com/photos/111085/pexels-photo-111085.jpeg?cs=srgb&dl=pexels-bradley-hook-111085.jpg&fm=jpg&w=1920&h=1292&_gl=1*1cdpydt*_ga*MTE0NDAwNTEwOS4xNzA2MDAyOTMy*_ga_8JE65Q40S6*MTcwNjg1MTYyMC43LjEuMTcwNjg1NjEyNC4wLjAuMA..',
-		src: '../../../src/assets/sounds/Когда_закончится_лето.mp3',
+		src: '/src/assets/music/track-9.mp3',
 		title: 'Когда закончится лето',
 		text: `КОГДА ЗАКОНЧИТСЯ ЛЕТО
             
@@ -440,7 +440,7 @@ export const songs = [
 	{
 		id: 10,
 		url: 'https://images.pexels.com/photos/573258/pexels-photo-573258.jpeg?cs=srgb&dl=pexels-matheus-bertelli-573258.jpg&fm=jpg&w=1920&h=1280&_gl=1*z0fkbi*_ga*MTE0NDAwNTEwOS4xNzA2MDAyOTMy*_ga_8JE65Q40S6*MTcwNjg1MTYyMC43LjEuMTcwNjg1NjMxMS4wLjAuMA..',
-		src: '../../../src/assets/sounds/Сон_Алеси.mp3',
+		src: '/src/assets/music/track-10.mp3',
 		title: 'Сон Алеси',
 		text: `СОН АЛЕСИ
             
@@ -490,7 +490,7 @@ export const songs = [
 	{
 		id: 11,
 		url: 'https://images.pexels.com/photos/556662/pexels-photo-556662.jpeg?cs=srgb&dl=pexels-luizclas-556662.jpg&fm=jpg&w=1920&h=2401&_gl=1*gajkg1*_ga*MTE0NDAwNTEwOS4xNzA2MDAyOTMy*_ga_8JE65Q40S6*MTcwNjg1MTYyMC43LjEuMTcwNjg1NjkyMi4wLjAuMA..',
-		src: '../../../src/assets/sounds/Я_всё_ещё_люблю_тебя.mp3',
+		src: '/src/assets/music/track-11.mp3',
 		title: 'Я всё ещё люблю тебя...',
 		text: `Я ВСЁ ЕЩЁ ЛЮБЛЮ ТЕБЯ...
             
@@ -551,7 +551,7 @@ export const songs = [
 	{
 		id: 12,
 		url: 'https://kartinki.pics/uploads/posts/2022-12/1670500368_1-kartinkin-net-p-kartinki-marionetki-instagram-2.jpg',
-		src: '../../../src/assets/sounds/Люди_как_куклы.mp3',
+		src: '/src/assets/music/track-12.mp3',
 		title: 'Люди как куклы',
 		text: `ЛЮДИ КАК КУКЛЫ
             
@@ -593,7 +593,7 @@ export const songs = [
 	{
 		id: 13,
 		url: 'https://images.pexels.com/photos/301599/pexels-photo-301599.jpeg?cs=srgb&dl=pexels-pixabay-301599.jpg&fm=jpg&w=1920&h=1080&_gl=1*1svtbp2*_ga*MTE0NDAwNTEwOS4xNzA2MDAyOTMy*_ga_8JE65Q40S6*MTcwNjg2MDUwMy44LjEuMTcwNjg2MTQyOC4wLjAuMA..',
-		src: '../../../src/assets/sounds/Солнечный_Король.mp3',
+		src: '/src/assets/music/track-13.mp3',
 		title: 'Солнечный король',
 		text: `СОЛНЕЧНЫЙ КОРОЛЬ
             
@@ -645,13 +645,14 @@ export const songs = [
 	{
 		id: 14,
 		url: 'https://kartinki.pics/uploads/posts/2022-12/1671800556_kartinkin-net-p-lyubov-i-nenavist-kartinki-pinterest-3.jpg',
+		src: '/src/assets/music/track-14.mp3',
 		title: 'Отель разбитых сердец',
 		text: `Отель разбитых сердец`,
 	},
 	{
 		id: 15,
 		url: 'https://kartinki.pics/uploads/posts/2022-12/thumbs/1671755786_kartinkin-net-p-krasivie-kartinki-pustini-vkontakte-15.jpg',
-		src: '../../../src/assets/sounds/Караван_мечты.mp3',
+		src: '/src/assets/music/track-15.mp3',
 		title: 'Караван мечты',
 		text: `КАРАВАН МЕЧТЫ
             
@@ -688,7 +689,7 @@ export const songs = [
 	{
 		id: 16,
 		url: 'https://kartinki.pics/uploads/posts/2023-12/1703051870_kartinki-pics-p-krasivii-snegopad-oboi-48.jpg',
-		src: '../../../src/assets/sounds/На_старый_город_падает_снег.mp3',
+		src: '/src/assets/music/track-16.mp3',
 		title: 'На старый город падает снег...',
 		text: `НА СТАРЫЙ ГОРОД ПАДАЕТ СНЕГ...
             
@@ -757,6 +758,7 @@ export const songs = [
 	{
 		id: 18,
 		url: 'https://kartinki.pics/uploads/posts/2021-04/1618101792_49-p-astronomiya-planeti-fentezi-51.jpg',
+		src: '/src/assets/music/track-18.mp3',
 		text: `ПЕРЕРОЖДЕНИЕ
             
       Ой, то не вечер то не вечер,
