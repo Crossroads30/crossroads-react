@@ -1,3 +1,6 @@
+import cover1 from './assets/bgrs/album-covers/perekrestok-cover.png'
+import cover2 from './assets/bgrs/album-covers/man-on-moon-cover.png'
+
 export const songsBgr =
 	'https://images.pexels.com/photos/9654712/pexels-photo-9654712.png?cs=srgb&dl=pexels-raquel-elise-de-moraes-9654712.jpg&fm=jpg&w=1920&h=1280&_gl=1*1w3wued*_ga*MTE0NDAwNTEwOS4xNzA2MDAyOTMy*_ga_8JE65Q40S6*MTcwNjg1MTYyMC43LjEuMTcwNjg1NDQyMC4wLjAuMA..'
 
@@ -74,9 +77,9 @@ export const videos = [
 
 export const albums = [
 	{
-		id: 1,
+		id: 'perekrestok',
 		title: 'ПЕРЕКРЁСТОК',
-		cover: 'src/assets/bgrs/album-covers/perekrestok-cover.png',
+		cover: cover1,
 		songs: [
 			'Наконец-то Рождество',
 			'Человек на луне',
@@ -91,9 +94,9 @@ export const albums = [
 		],
 	},
 	{
-		id: 2,
+		id: 'chelovek-na-lune',
 		title: 'ЧЕЛОВЕК НА ЛУНЕ',
-		cover: 'src/assets/bgrs/album-covers/man-on-moon-cover.png',
+		cover: cover2,
 		songs: [
 			'Люди как куклы',
 			'Я всё ещё люблю тебя',
