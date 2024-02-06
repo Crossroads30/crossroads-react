@@ -3,6 +3,7 @@ import background from '../assets/bgrs/page-bgrs/home-bgr.jpeg'
 import cover1 from '../assets/bgrs/album-covers/perekrestok-cover.png'
 import cover2 from '../assets/bgrs/album-covers/man-on-moon-cover.png'
 import { albums } from '../data'
+import { Link } from 'react-router-dom'
 
 const Albums = () => {
 	return (
@@ -12,7 +13,11 @@ const Albums = () => {
 					{albums.map(album => {
 						const { id, title, cover } = album
 						return (
-							<div key={id} className='wrapper flex-column'>
+							<Link
+								key={id}
+								to={`/albums/${id}`}
+								className='wrapper flex-column'
+							>
 								<h4>{title}</h4>
 								<div
 									className='album'
@@ -20,7 +25,7 @@ const Albums = () => {
 										background: `url(${cover}) no-repeat center center / cover`,
 									}}
 								></div>
-							</div>
+							</Link>
 						)
 					})}
 				</div>
