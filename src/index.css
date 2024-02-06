@@ -35,7 +35,7 @@ html {
 	--clr-grey-5: hsla(207, 25%, 52%, 0.688);
 	--clr-grey-6: hsl(209, 23%, 60%);
 	--clr-grey-7: hsl(211, 27%, 70%);
-	--clr-grey-8: hsla(210, 31%, 80%, 0.561);
+	--clr-grey-8: hsl(210, 31%, 80%);
 	--clr-grey-9: hsl(212, 33%, 89%);
 	--clr-grey-10: hsl(206, 33%, 96%);
 	--clr-white: #ffffff;
