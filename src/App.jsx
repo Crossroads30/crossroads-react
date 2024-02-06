@@ -1,5 +1,5 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
-import { Home, Videos, Songs, Albums, News,Song } from './pages'
+import { Home, Videos, Songs, Albums, News, Song, Album } from './pages'
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
 import SideBar from './components/SideBar'
@@ -18,6 +18,7 @@ const App = () => {
 				<Route path='/songs' element={<Songs />} />
 				<Route path='/songs/:id' element={<Song />} />
 				<Route path='/albums' element={<Albums />} />
+				<Route path='/albums/:id' element={<Album />} />
 				<Route path='/news' element={<News />} />
 			</Routes>
 			<Footer />
