@@ -62,6 +62,7 @@ const Wrapper = styled.main`
 	}
 	.sign-small {
 		text-align: right;
+		font-size: calc(0.1vw + 0.39vh + 1vmin);
 	}
 	p {
 		font-size: calc(0.2vw + 0.6vh + 1vmin);
@@ -94,6 +95,7 @@ const Wrapper = styled.main`
 	@media screen and (min-width: 1024px) {
 		.text {
 			max-width: calc(42vw + 20vh + 1vmin);
+			margin-top: calc(50px + 7vh);
 		}
 		p {
 			font-size: calc(0.2vw + 0.4vh + 1vmin);
@@ -105,6 +107,7 @@ const Wrapper = styled.main`
 			display: block;
 			align-self: end;
 			margin-bottom: 3%;
+			font-size: calc(0.1vw + 0.39vh + 1vmin);
 		}
 		.sign-small {
 			display: none;
