@@ -1,6 +1,14 @@
+import styled from "styled-components"
+
 const Albums = () => {
   return (
-    <h1>Albums</h1>
+    <Wrapper>
+      <div className="height section-center"></div>
+    </Wrapper>
   )
 }
 export default Albums
+
+const Wrapper = styled.main`
+
+`

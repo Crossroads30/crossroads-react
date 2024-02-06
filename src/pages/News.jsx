@@ -1,5 +1,5 @@
 import styled from "styled-components"
-import background from '../assets/bgrs/news-bgr.png'
+import background from '../assets/bgrs/page-bgrs/news-bgr.png'
 
 const News = () => {
   return (

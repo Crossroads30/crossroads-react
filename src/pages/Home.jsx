@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import background from '../assets/bgrs/home-bgr.jpg'
+import background from '../assets/bgrs/page-bgrs/home-bgr.jpg'
 
 const Home = () => {
 	return (
