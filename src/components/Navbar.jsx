@@ -18,7 +18,6 @@ const Navbar = ({ setSidebarOpen, isSidebarOpen }) => {
 					onClick={() => setSidebarOpen(!isSidebarOpen)}
 				/>
 			</div>
-			<hr />
 		</Wrapper>
 	)
 }
