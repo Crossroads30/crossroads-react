@@ -55,7 +55,7 @@ const Wrapper = styled.div`
 		flex-direction: column;
 		width: 100%;
 		max-width: 1100px;
-		margin: 0 auto;
+		margin: 2rem auto;
 		padding: 2rem;
 	}
 	.show-modal {
@@ -83,5 +83,20 @@ const Wrapper = styled.div`
 		cursor: pointer;
 		align-self: flex-end;
 		margin-bottom: 0.5rem;
+	}
+	@media screen and (min-width: 425px) {
+		.modal-wrapper {
+			margin-top: 5rem;
+		}
+	}
+	@media screen and (min-width: 768px) {
+		.modal-wrapper {
+			margin-top: 7rem;
+		}
+	}
+	@media screen and (min-width: 1024px) {
+		.modal-wrapper {
+			margin-top: 4rem;
+		}
 	}
 `
