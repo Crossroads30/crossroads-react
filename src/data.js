@@ -73,16 +73,38 @@ export const videos = [
 ]
 
 export const albums = [
-      {
-            id: 1,
-            title: 'ПЕРЕКРЁСТОК',
-            cover: 'src/assets/bgrs/album-covers/perekrestok-cover.png'
-      },
-      {
-            id: 2,
-            title: 'ЧЕЛОВЕК НА ЛУНЕ',
-            cover: 'src/assets/bgrs/album-covers/man-on-moon-cover.png'
-      }
+	{
+		id: 1,
+		title: 'ПЕРЕКРЁСТОК',
+		cover: 'src/assets/bgrs/album-covers/perekrestok-cover.png',
+		songs: [
+			'Наконец-то Рождество',
+			'Человек на луне',
+			'Перекрёсток',
+			'Океан',
+			'Колыбельная',
+			'Межпланетный экспресс',
+			'Под звёздами вселенной',
+			'Кухня любви',
+			'Когда закончится лето...',
+			'Сон Алеси',
+		],
+	},
+	{
+		id: 2,
+		title: 'ЧЕЛОВЕК НА ЛУНЕ',
+		cover: 'src/assets/bgrs/album-covers/man-on-moon-cover.png',
+		songs: [
+			'Люди как куклы',
+			'Я всё ещё люблю тебя',
+			'Солнечный Король',
+			'Отель разбитых сердец',
+			'Караван мечты',
+			'На старый город падает снег',
+			'Звёздный вальс',
+			'Перерождение',
+		],
+	},
 ]
 
 export const songs = [
