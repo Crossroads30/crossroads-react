@@ -72,6 +72,19 @@ export const videos = [
 	},
 ]
 
+export const albums = [
+      {
+            id: 1,
+            title: 'ПЕРЕКРЁСТОК',
+            cover: 'src/assets/bgrs/album-covers/perekrestok-cover.png'
+      },
+      {
+            id: 2,
+            title: 'ЧЕЛОВЕК НА ЛУНЕ',
+            cover: 'src/assets/bgrs/album-covers/man-on-moon-cover.png'
+      }
+]
+
 export const songs = [
 	{
 		id: 1,
