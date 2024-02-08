@@ -1,7 +1,5 @@
 import styled from 'styled-components'
 import background from '../assets/bgrs/page-bgrs/home-bgr.jpeg'
-import cover1 from '../assets/bgrs/album-covers/perekrestok-cover.png'
-import cover2 from '../assets/bgrs/album-covers/man-on-moon-cover.png'
 import { albums } from '../data'
 import { Link } from 'react-router-dom'
 
@@ -18,7 +16,7 @@ const Albums = () => {
 								to={`/albums/${id}`}
 								className='wrapper flex-column'
 							>
-								<h4>{title}</h4>
+								<h3>{title}</h3>
 								<div
 									className='album'
 									style={{
@@ -57,14 +55,15 @@ const Wrapper = styled.main`
 		width: 200px;
 		height: 200px;
 	}
-	h4 {
+	h3 {
 		color: var(--clr-grey-10);
+		text-shadow: 3px 3px 6px var(--clr-black);
 	}
 	@media screen and (min-width: 425px) {
 		.wrapper {
 			width: 300px;
 			height: 320px;
-			background-color: var(--clr-grey-4);
+			background-color: var(--clr-grey-0);
 			padding: 15px 25px 25px;
 		}
 		.album {
