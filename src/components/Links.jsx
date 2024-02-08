@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { links } from '../data'
+import { links } from '../appData/links-data'
 import { NavLink } from 'react-router-dom'
 
 const Links = ({ setSidebarOpen, isSidebarOpen }) => {

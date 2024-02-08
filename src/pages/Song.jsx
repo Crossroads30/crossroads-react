@@ -1,6 +1,6 @@
 import { useNavigate, useParams } from 'react-router-dom'
 import styled from 'styled-components'
-import { songs } from '../data'
+import { songs } from '../appData/songs-data'
 import AudioPlayer from '../components/AudioPlayer'
 import { useState } from 'react'
 import { GiSoundOn } from 'react-icons/gi'

@@ -1,6 +1,6 @@
 import { useNavigate, useParams } from 'react-router-dom'
 import styled from 'styled-components'
-import { albums } from '../data'
+import { albums } from '../appData/albums-data'
 import { useDispatch } from 'react-redux'
 import { setAlbumName, setAlbumOn } from '../features/appSlice'
 import background from '../assets/bgrs/page-bgrs/albums-bgr.jpeg'

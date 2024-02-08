@@ -1,7 +1,6 @@
 import styled from 'styled-components'
-import { songs } from '../data'
+import { songs } from '../appData/songs-data'
 import { Link } from 'react-router-dom'
-import { songsBgr } from '../data'
 import background from '../assets/bgrs/page-bgrs/songs-bgr.jpg'
 
 const Songs = () => {
