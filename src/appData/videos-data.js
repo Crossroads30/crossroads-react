@@ -3,7 +3,7 @@ export const videos = [
 		id: '1',
 		name: 'Океан',
 		url: 'https://www.youtube.com/embed/fyMYqtFbAeY?autoplay=1',
-		src: 'src/assets/bgrs/video-bgrs/ocean.png',
+		src: '../assets/bgrs/video-bgrs/ocean.png',
 	},
 	{
 		id: '2',
