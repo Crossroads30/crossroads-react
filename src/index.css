@@ -149,8 +149,8 @@ p {
 	cursor: pointer;
 }
 .btn:hover {
-	background-color: var(--clr-grey-2);
-	color: var(--clr-grey-9);
+	background-color: var(--clr-grey-3);
+	color: var(--clr-grey-8);
 }
 
 @media screen and (min-width: 1024px) {
