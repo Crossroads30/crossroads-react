@@ -3,7 +3,7 @@ import styled from 'styled-components'
 import { FaRegCirclePlay } from 'react-icons/fa6'
 import { FaRegCirclePause } from 'react-icons/fa6'
 
-function AudioPlayer({ isAudio, source }) {
+function AudioPlayer({ source }) {
 	const [isPlaying, setIsPlaying] = useState(false)
 	const [currentTime, setCurrentTime] = useState(0)
 	const [duration, setDuration] = useState(0)
