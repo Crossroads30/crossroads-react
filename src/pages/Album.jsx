@@ -3,7 +3,7 @@ import styled from 'styled-components'
 import { albums } from '../data'
 import { useDispatch } from 'react-redux'
 import { setAlbumName, setAlbumOn } from '../features/appSlice'
-import background from '../assets/bgrs/page-bgrs/home-bgr.jpeg'
+import background from '../assets/bgrs/page-bgrs/albums-bgr.jpeg'
 
 const Album = () => {
 	const dispatch = useDispatch()

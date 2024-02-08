@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import background from '../assets/bgrs/page-bgrs/home-bgr.jpeg'
+import background from '../assets/bgrs/page-bgrs/albums-bgr.jpeg'
 import { albums } from '../data'
 import { Link } from 'react-router-dom'
 
