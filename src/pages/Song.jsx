@@ -4,8 +4,12 @@ import { songs } from '../data'
 import AudioPlayer from '../components/AudioPlayer'
 import { useState } from 'react'
 import { GiSoundOn } from 'react-icons/gi'
+import { useDispatch, useSelector } from 'react-redux'
+import { setAlbumName, setAlbumOff } from '../features/appSlice'
 
 const Song = () => {
+	const { isAlbum, albumName } = useSelector(store => store.app)
+	const dispatch = useDispatch()
 	const [isAudio, setIsAudio] = useState(false)
 	const { id } = useParams()
 	const navigate = useNavigate()
@@ -32,8 +36,14 @@ const Song = () => {
 							className='btn back-btn'
 							type='button'
 							onClick={() => {
-								navigate('/songs')
-								setIsAudio(false)
+								if (isAlbum) {
+									navigate(`/albums/${albumName}`)
+									dispatch(setAlbumOff())
+									dispatch(setAlbumName(''))
+								} else {
+									navigate('/songs')
+									setIsAudio(false)
+								}
 							}}
 						>
 							назад
