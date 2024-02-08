@@ -63,12 +63,12 @@ const Wrapper = styled.main`
 		padding: 0;
 	}
 	.text-container {
-		background-color: var(--clr-grey-3);
+		background-color: var(--clr-grey-4);
 		margin-bottom: 3vh;
 	}
 	.text {
 		color: var(--clr-text);
-		background-color: var(--clr-grey-4);
+		/* background-color: var(--clr-grey-4); */
 		white-space: pre-line;
 		text-align: center;
 		font-size: 0.4rem;
@@ -85,7 +85,9 @@ const Wrapper = styled.main`
 		padding: 5px;
 		border: 1px solid;
 	}
-
+	.sound:hover {
+		color: var(--clr-grey-9);
+	}
 	.back-btn {
 		align-self: center;
 	}
