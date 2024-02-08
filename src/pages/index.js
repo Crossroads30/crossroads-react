@@ -5,5 +5,6 @@ import Albums from './Albums'
 import News from './News'
 import Song from './Song'
 import Album from './Album'
+import ErrorPage from './ErrorPage'
 
-export { Home, Videos, Songs, Albums, News, Song, Album }
+export { Home, Videos, Songs, Albums, News, Song, Album, ErrorPage }
