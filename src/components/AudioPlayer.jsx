@@ -173,8 +173,8 @@ const Wrapper = styled.div`
 		margin-bottom: 1rem;
 		position: fixed;
 		top: 5.8rem;
-		left: 4.5rem;
 		width: 145px;
+		left: 7vw;
 		.control {
 			color: var(--clr-grey-7);
 			margin-bottom: 10px;
@@ -194,4 +194,7 @@ const Wrapper = styled.div`
 			height: 8px;
 		}
 	}
+		@media screen and (min-width: 1950px) {
+			left: 27vw;
+		}
 `
