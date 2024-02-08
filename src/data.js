@@ -31,7 +31,6 @@ export const links = [
 	{ id: 5, text: 'новости', url: '/news' },
 ]
 
-//https://music.youtube.com/playlist?list=PLN6KDl1wTdPyMivsOoatS6xjR21pqmhjN&si=UiPWnOaknVDf1Su8
 
 export const videos = [
 	{
