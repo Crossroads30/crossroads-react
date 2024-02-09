@@ -18,6 +18,22 @@ import bgr_17 from '../assets/bgrs/song-bgrs/track-17.jpeg'
 import bgr_18 from '../assets/bgrs/song-bgrs/track-18.jpeg'
 
 import song1 from '../assets/music/track-1.mp3'
+import song2 from '../assets/music/track-2.mp3'
+import song3 from '../assets/music/track-3.mp3'
+import song4 from '../assets/music/track-4.mp3'
+import song5 from '../assets/music/track-5.mp3'
+import song6 from '../assets/music/track-6.mp3'
+import song7 from '../assets/music/track-7.mp3'
+import song8 from '../assets/music/track-8.mp3'
+import song9 from '../assets/music/track-9.mp3'
+import song10 from '../assets/music/track-10.mp3'
+import song11 from '../assets/music/track-11.mp3'
+import song12 from '../assets/music/track-12.mp3'
+import song13 from '../assets/music/track-13.mp3'
+import song14 from '../assets/music/track-14.mp3'
+import song15 from '../assets/music/track-15.mp3'
+import song16 from '../assets/music/track-16.mp3'
+import song18 from '../assets/music/track-17.mp3'
 
 export const songs = [
 	{
@@ -77,7 +93,7 @@ export const songs = [
 	{
 		id: 2,
 		url: bgr_2,
-		src: '/src/assets/music/track-2.mp3',
+		src: song2,
 		title: 'Человек на луне',
 		text: `Я человек на луне,
       Я знаю всё что ты видишь во сне, 
@@ -107,7 +123,7 @@ export const songs = [
 	{
 		id: 3,
 		url: bgr_3,
-		src: '/src/assets/music/track-3.mp3',
+		src: song3,
 		title: 'Перекрёсток',
 		text: `ПЕРЕКРЁСТОК
 
@@ -152,7 +168,7 @@ export const songs = [
 	{
 		id: 4,
 		url: bgr_4,
-		src: '/src/assets/music/track-4.mp3',
+		src: song4,
 		title: 'Океан',
 		text: `ОКЕАН
             
@@ -209,7 +225,7 @@ export const songs = [
 	{
 		id: 5,
 		url: bgr_5,
-		src: '/src/assets/music/track-5.mp3',
+		src: song5,
 		title: 'Колыбельная',
 		text: `КОЛЫБЕЛЬНАЯ
             
@@ -255,7 +271,7 @@ export const songs = [
 	{
 		id: 6,
 		url: bgr_6,
-		src: '/src/assets/music/track-6.mp3',
+		src: song6,
 		title: 'Межпланетный экспресс',
 		text: `МЕЖПЛАНЕТНЫЙ ЭКСПРЕСС
 
@@ -289,7 +305,7 @@ export const songs = [
 	{
 		id: 7,
 		url: bgr_7,
-		src: '/src/assets/music/track-7.mp3',
+		src: song7,
 		title: 'Под звёздами вселенной',
 		text: `ПОД ЗВЁЗДАМИ ВСЕЛЕННОЙ
       
@@ -328,7 +344,7 @@ export const songs = [
 	{
 		id: 8,
 		url: bgr_8,
-		src: '/src/assets/music/track-8.mp3',
+		src: song8,
 		title: 'Кухня любви',
 		text: `КУХНЯ ЛЮБВИ
             
@@ -370,7 +386,7 @@ export const songs = [
 	{
 		id: 9,
 		url: bgr_9,
-		src: '/src/assets/music/track-9.mp3',
+		src: song9,
 		title: 'Когда закончится лето',
 		text: `КОГДА ЗАКОНЧИТСЯ ЛЕТО
             
@@ -424,7 +440,7 @@ export const songs = [
 	{
 		id: 10,
 		url: bgr_10,
-		src: '/src/assets/music/track-10.mp3',
+		src: song10,
 		title: 'Сон Алеси',
 		text: `СОН АЛЕСИ
             
@@ -474,7 +490,7 @@ export const songs = [
 	{
 		id: 11,
 		url: bgr_11,
-		src: '/src/assets/music/track-11.mp3',
+		src: song11,
 		title: 'Я всё ещё люблю тебя...',
 		text: `Я ВСЁ ЕЩЁ ЛЮБЛЮ ТЕБЯ...
             
@@ -535,7 +551,7 @@ export const songs = [
 	{
 		id: 12,
 		url: bgr_12,
-		src: '/src/assets/music/track-12.mp3',
+		src: song12,
 		title: 'Люди как куклы',
 		text: `ЛЮДИ КАК КУКЛЫ
             
@@ -577,7 +593,7 @@ export const songs = [
 	{
 		id: 13,
 		url: bgr_13,
-		src: '/src/assets/music/track-13.mp3',
+		src: song13,
 		title: 'Солнечный король',
 		text: `СОЛНЕЧНЫЙ КОРОЛЬ
             
@@ -629,7 +645,7 @@ export const songs = [
 	{
 		id: 14,
 		url: bgr_14,
-		src: '/src/assets/music/track-14.mp3',
+		src: song14,
 		title: 'Отель разбитых сердец',
 		text: `ОТЕЛЬ РАЗБИТЫХ СЕРДЕЦ
 
@@ -673,7 +689,7 @@ export const songs = [
 	{
 		id: 15,
 		url: bgr_15,
-		src: '/src/assets/music/track-15.mp3',
+		src: song15,
 		title: 'Караван мечты',
 		text: `КАРАВАН МЕЧТЫ
             
@@ -710,7 +726,7 @@ export const songs = [
 	{
 		id: 16,
 		url: bgr_16,
-		src: '/src/assets/music/track-16.mp3',
+		src: song16,
 		title: 'На старый город падает снег...',
 		text: `НА СТАРЫЙ ГОРОД ПАДАЕТ СНЕГ...
             
@@ -802,7 +818,8 @@ export const songs = [
 	{
 		id: 18,
 		url: bgr_18,
-		src: '/src/assets/music/track-18.mp3',
+		src: '',
+		title: 'Перерождение',
 		text: `ПЕРЕРОЖДЕНИЕ
             
       Ой, то не вечер то не вечер
