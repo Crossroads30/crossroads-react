@@ -24,7 +24,7 @@ export const songs = [
 		id: 1,
 		url: bgr_1,
 		title: 'Наконец-то Рождество!',
-		src: song1,
+		src: 'https://www2.cs.uic.edu/~i101/SoundFiles/StarWars3.wav',
 		text: `НАКОНЕЦ - ТО РОЖДЕСТВО!
             
       Год прошёл и мы опять,
