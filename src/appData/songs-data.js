@@ -17,12 +17,14 @@ import bgr_16 from '../assets/bgrs/song-bgrs/track-16.jpeg'
 import bgr_17 from '../assets/bgrs/song-bgrs/track-17.jpeg'
 import bgr_18 from '../assets/bgrs/song-bgrs/track-18.jpeg'
 
+import song1 from '../assets/music/track-1.mp3'
+
 export const songs = [
 	{
 		id: 1,
 		url: bgr_1,
 		title: 'Наконец-то Рождество!',
-		src: '/src/assets/music/track-1.mp3',
+		src: song1,
 		text: `НАКОНЕЦ - ТО РОЖДЕСТВО!
             
       Год прошёл и мы опять,
