@@ -5,7 +5,7 @@ const News = () => {
   return (
 		<Wrapper>
 			<div className='height section-center flex center'>
-				<p>Choose your own way...</p>
+				<p>Выбери свой собственный путь...</p>
 			</div>
 		</Wrapper>
 	)

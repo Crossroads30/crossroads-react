@@ -1,12 +1,15 @@
 import styled from 'styled-components'
 import Links from './Links'
 import { GiHamburgerMenu } from 'react-icons/gi'
+import { Link } from 'react-router-dom'
 
 const Navbar = ({ setSidebarOpen, isSidebarOpen }) => {
 	return (
 		<Wrapper>
 			<div className='section-center flex'>
-				<h1>перекрёсток</h1>
+				<Link to='/'>
+					<h1>перекрёсток</h1>
+				</Link>
 				<div className='nav-links flex'>
 					<Links
 						setSidebarOpen={setSidebarOpen}
