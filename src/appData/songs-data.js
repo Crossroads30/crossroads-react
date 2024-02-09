@@ -22,7 +22,7 @@ export const songs = [
 		id: 1,
 		url: bgr_1,
 		title: 'Наконец-то Рождество!',
-		src: 'https://music.youtube.com/watch?v=dDr88Z-sGxo&list=MLPT',
+		src: '/src/assets/music/track-1.mp3',
 		text: `НАКОНЕЦ - ТО РОЖДЕСТВО!
             
       Год прошёл и мы опять,
