@@ -70,7 +70,7 @@ const Wrapper = styled.main`
 	}
 	.cover {
 		order: 1;
-		margin-bottom: 1rem;
+		margin-bottom: .5rem;
 		img {
 			width: 230px;
 			height: 230px;
@@ -80,7 +80,7 @@ const Wrapper = styled.main`
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-		padding: 1rem;
+		padding: .5rem .8rem .5rem;
 		border-top: 1px solid var(--clr-grey-4);
 		margin-bottom: 1.2rem;
 		background-color: var(--clr-grey-0);
@@ -106,7 +106,7 @@ const Wrapper = styled.main`
 	}
 	h2 {
 		font-size: 0.8rem;
-		margin-bottom: 0.5rem;
+		margin-bottom: 0.3rem;
 		color: var(--clr-grey-8);
 		text-shadow: 3px 3px 6px var(--clr-black);
 	}
@@ -115,9 +115,9 @@ const Wrapper = styled.main`
 		color: var(--clr-grey-10);
 		text-shadow: 3px 3px 6px var(--clr-black);
 		text-transform: uppercase;
-		margin-left: 0.5rem;
+		margin-left: 0.9rem;
 		cursor: pointer;
-		line-height: 18px;
+		line-height: 10px;
 	}
 	.song:hover {
 		border-bottom: 1px solid var(--clr-grey-10);
