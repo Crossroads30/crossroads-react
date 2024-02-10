@@ -17,12 +17,13 @@ const Wrapper = styled.main`
 	background-size: cover;
 	.center {
 		justify-content: center;
-    align-items: flex-start;
+		align-items: flex-start;
 	}
 	p {
 		color: var(--clr-grey-9);
 		text-shadow: 1px 2px 4px #000000;
-    font-size: 2rem;
-    margin-top: 15rem;
+		font-size: 2rem;
+		margin-top: 10rem;
+		text-align: center;
 	}
 `
