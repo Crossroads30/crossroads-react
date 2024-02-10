@@ -40,6 +40,7 @@ const Wrapper = styled.main`
 		justify-content: center;
 	}
 	.container {
+		margin-top: 10vh;
 		width: 100%;
 		align-items: center;
 	}

@@ -59,9 +59,6 @@ const Wrapper = styled.footer`
 		}
 	}
 	@media screen and (min-width: 768px) {
-		.footer {
-			height: 3rem;
-		}
 		p {
 			font-size: 0.7rem;
 		}

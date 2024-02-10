@@ -124,7 +124,7 @@ p {
 }
 
 .height {
-	min-height: calc(100svh - 3rem);
+	min-height: calc(100vh - 3rem);
 }
 
 .flex {
@@ -155,6 +155,6 @@ p {
 
 @media screen and (min-width: 1024px) {
 	.height {
-		min-height: calc(100svh - 4rem);
+		min-height: calc(100vh - 4rem);
 	}
 }

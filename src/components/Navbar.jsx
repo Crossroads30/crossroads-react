@@ -34,6 +34,7 @@ const Wrapper = styled.header`
 	top: 0;
 	left: 0;
 	width: 100vw;
+	height: 3rem;
 	h1 {
 		font-size: 0.8rem;
 		text-transform: uppercase;
@@ -59,6 +60,7 @@ const Wrapper = styled.header`
 		}
 	}
 	@media screen and (min-width: 1024px) {
+		height: 4rem;
 		h1 {
 			font-size: 1.2rem;
 			text-transform: uppercase;
