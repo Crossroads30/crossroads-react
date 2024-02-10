@@ -14,7 +14,7 @@ const Album = () => {
 
 	return (
 		<Wrapper>
-			<div className='height section-center'>
+			<div className='height section-center section flex-column'>
 				<div className='container flex-column'>
 					<div className='context'>
 						<ul className='songs'>
@@ -43,7 +43,7 @@ const Album = () => {
 					</div>
 					<button
 						type='button'
-						className='btn'
+						className='btn back'
 						onClick={() => {
 							navigate(`/albums`)
 						}}
@@ -61,7 +61,11 @@ const Wrapper = styled.main`
 	background: url(${background}) no-repeat center center;
 	background-size: cover;
 	.container {
-		margin-top: 7vh;
+		margin-top: 3.2rem;
+		align-items: center;
+	}
+	.section {
+		justify-content: center;
 		align-items: center;
 	}
 	.cover {
@@ -78,7 +82,7 @@ const Wrapper = styled.main`
 		align-items: center;
 		padding: 1rem;
 		border-top: 1px solid var(--clr-grey-4);
-		margin-bottom: 2rem;
+		margin-bottom: 1.2rem;
 		background-color: var(--clr-grey-0);
 	}
 	.songs {
@@ -96,6 +100,9 @@ const Wrapper = styled.main`
 			color: var(--clr-grey-10);
 			text-shadow: 3px 3px 6px var(--clr-black);
 		}
+	}
+	.song:last-child {
+		margin-bottom: 0;
 	}
 	h2 {
 		font-size: 0.8rem;
@@ -115,10 +122,10 @@ const Wrapper = styled.main`
 	.song:hover {
 		border-bottom: 1px solid var(--clr-grey-10);
 	}
+	.back {
+		margin-bottom: 0;
+	}
 	@media screen and (min-width: 425px) {
-		.container {
-			margin-top: 10vh;
-		}
 		.cover {
 			img {
 				width: 300px;
@@ -145,7 +152,6 @@ const Wrapper = styled.main`
 	}
 	@media screen and (min-width: 768px) {
 		.container {
-			margin-top: 12vh;
 			align-items: center;
 		}
 		.cover {
@@ -175,9 +181,6 @@ const Wrapper = styled.main`
 		}
 	}
 	@media screen and (min-width: 1024px) {
-		.container {
-			margin-top: 12vh;
-		}
 		.cover {
 			margin-left: 4rem;
 			order: 2;
