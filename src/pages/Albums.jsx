@@ -40,7 +40,7 @@ const Wrapper = styled.main`
 		justify-content: center;
 	}
 	.container {
-		margin-top: 10vh;
+		margin-top: 3.5rem;
 		width: 100%;
 		align-items: center;
 	}
@@ -77,6 +77,7 @@ const Wrapper = styled.main`
 		.container {
 			flex-direction: row;
 			justify-content: center;
+			margin-top: 0;
 		}
 		.wrapper {
 			margin-right: 2rem;
