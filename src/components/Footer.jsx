@@ -8,7 +8,7 @@ const Footer = () => {
 	return (
 		<Wrapper>
 			<div className='section-center flex footer'>
-				<p className='text'>COPYRIGHT © PEREKRESTOKMUSIC {year}</p>
+				<p className='text'>COPYRIGHT © JACOBZABOLOTNYI {year}</p>
 				<Link
 					to='https://www.youtube.com/@user-sr2nv1yl6h'
 					className='youTube-link'
