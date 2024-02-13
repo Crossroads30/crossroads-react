@@ -41,6 +41,7 @@ export const songs = [
 		url: bgr_1,
 		title: 'Наконец-то Рождество!',
 		src: song1,
+		duration: '4:08',
 		text: `НАКОНЕЦ - ТО РОЖДЕСТВО!
             
       Год прошёл и мы опять,
@@ -94,6 +95,7 @@ export const songs = [
 		id: 2,
 		url: bgr_2,
 		src: song2,
+		duration: '3:47',
 		title: 'Человек на луне',
 		text: `Я человек на луне,
       Я знаю всё что ты видишь во сне, 
@@ -124,6 +126,7 @@ export const songs = [
 		id: 3,
 		url: bgr_3,
 		src: song3,
+		duration: '4:23',
 		title: 'Перекрёсток',
 		text: `ПЕРЕКРЁСТОК
 
@@ -169,6 +172,7 @@ export const songs = [
 		id: 4,
 		url: bgr_4,
 		src: song4,
+		duration: '4:10',
 		title: 'Океан',
 		text: `ОКЕАН
             
@@ -226,6 +230,7 @@ export const songs = [
 		id: 5,
 		url: bgr_5,
 		src: song5,
+		duration: '3:06',
 		title: 'Колыбельная',
 		text: `КОЛЫБЕЛЬНАЯ
             
@@ -272,6 +277,7 @@ export const songs = [
 		id: 6,
 		url: bgr_6,
 		src: song6,
+		duration: '3:35',
 		title: 'Межпланетный экспресс',
 		text: `МЕЖПЛАНЕТНЫЙ ЭКСПРЕСС
 
@@ -306,6 +312,7 @@ export const songs = [
 		id: 7,
 		url: bgr_7,
 		src: song7,
+		duration: '3:38',
 		title: 'Под звёздами вселенной',
 		text: `ПОД ЗВЁЗДАМИ ВСЕЛЕННОЙ
       
@@ -345,6 +352,7 @@ export const songs = [
 		id: 8,
 		url: bgr_8,
 		src: song8,
+		duration: '2:36',
 		title: 'Кухня любви',
 		text: `КУХНЯ ЛЮБВИ
             
@@ -387,6 +395,7 @@ export const songs = [
 		id: 9,
 		url: bgr_9,
 		src: song9,
+		duration: '3:17',
 		title: 'Когда закончится лето',
 		text: `КОГДА ЗАКОНЧИТСЯ ЛЕТО
             
@@ -441,6 +450,7 @@ export const songs = [
 		id: 10,
 		url: bgr_10,
 		src: song10,
+		duration: '3:28',
 		title: 'Сон Алеси',
 		text: `СОН АЛЕСИ
             
@@ -491,6 +501,7 @@ export const songs = [
 		id: 11,
 		url: bgr_11,
 		src: song11,
+		duration: '4:26',
 		title: 'Я всё ещё люблю тебя...',
 		text: `Я ВСЁ ЕЩЁ ЛЮБЛЮ ТЕБЯ...
             
@@ -552,6 +563,7 @@ export const songs = [
 		id: 12,
 		url: bgr_12,
 		src: song12,
+		duration: '2:39',
 		title: 'Люди как куклы',
 		text: `ЛЮДИ КАК КУКЛЫ
             
@@ -594,6 +606,7 @@ export const songs = [
 		id: 13,
 		url: bgr_13,
 		src: song13,
+		duration: '4:58',
 		title: 'Солнечный король',
 		text: `СОЛНЕЧНЫЙ КОРОЛЬ
             
@@ -646,6 +659,7 @@ export const songs = [
 		id: 14,
 		url: bgr_14,
 		src: song14,
+		duration: '3:36',
 		title: 'Отель разбитых сердец',
 		text: `ОТЕЛЬ РАЗБИТЫХ СЕРДЕЦ
 
@@ -690,6 +704,7 @@ export const songs = [
 		id: 15,
 		url: bgr_15,
 		src: song15,
+		duration: '2:42',
 		title: 'Караван мечты',
 		text: `КАРАВАН МЕЧТЫ
             
@@ -727,6 +742,7 @@ export const songs = [
 		id: 16,
 		url: bgr_16,
 		src: song16,
+		duration: '3:27',
 		title: 'На старый город падает снег...',
 		text: `НА СТАРЫЙ ГОРОД ПАДАЕТ СНЕГ...
             
@@ -789,6 +805,7 @@ export const songs = [
 		id: 17,
 		url: bgr_17,
 		src: '',
+		duration: '',
 		title: 'Звёздный вальс',
 		text: `ЗВЁЗДНЫЙ ВАЛЬС
 
@@ -819,6 +836,7 @@ export const songs = [
 		id: 18,
 		url: bgr_18,
 		src: '',
+		duration: '',
 		title: 'Перерождение',
 		text: `ПЕРЕРОЖДЕНИЕ
             
