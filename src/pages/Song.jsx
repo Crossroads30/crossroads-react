@@ -2,12 +2,14 @@ import { useNavigate, useParams } from 'react-router-dom'
 import styled from 'styled-components'
 import { songs } from '../appData/songs-data'
 import AudioPlayer from '../components/AudioPlayer'
-import { useState } from 'react'
 import { GiSoundOn } from 'react-icons/gi'
 import { useDispatch, useSelector } from 'react-redux'
 import { setAlbumName, setAlbumOff } from '../features/appSlice'
+import { useEffect, useState } from 'react'
+import Loader from '../components/Loader'
 
 const Song = () => {
+	const [isLoad, setIsLoad] = useState(false)
 	const { isAlbum, albumName } = useSelector(store => store.app)
 	const dispatch = useDispatch()
 	const [isAudio, setIsAudio] = useState(false)
@@ -16,6 +18,16 @@ const Song = () => {
 
 	const singleSong = songs.find(song => song.id === Number(id))
 	const { src, url, text, title } = singleSong
+
+	useEffect(() => {
+		const img = new Image()
+		img.src = url
+		img.onload = () => setIsLoad(true)
+	}, [])
+
+	if (!isLoad) {
+		return <Loader />
+	}
 
 	return (
 		<Wrapper
