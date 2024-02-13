@@ -6,13 +6,17 @@ import Loader from '../components/Loader'
 const News = () => {
 	const [isLoad, setIsLoad] = useState(false)
 
-	useEffect(() => {
-		const img = new Image()
-		img.src = background
-		img.onload = () => setIsLoad(true)
-	}, [])
+	const img = new Image()
+	img.src = background
+	img.onload = () => setIsLoad(true)
 
-	if (!isLoad) {
+	// useEffect(() => {
+	// 	const img = new Image()
+	// 	img.src = background
+	// 	img.onload = () => setIsLoad(true)
+	// }, [])
+
+	if (!img.onload) {
 		return <Loader />
 	}
 	return (

@@ -6,16 +6,18 @@ import Loader from '../components/Loader'
 const Home = () => {
 	const [isLoad, setIsLoad] = useState(false)
 
-	useEffect(() => {
-		const img = new Image()
-		img.src = background
-		img.onload = () => setIsLoad(true)
-	}, [])
+	const img = new Image()
+	img.src = background
+	img.onload = () => setIsLoad(true)
 
-	if (!isLoad) {
-		return (
-			<Loader />
-		)
+	// useEffect(() => {
+	// 	const img = new Image()
+	// 	img.src = background
+	// 	img.onload = () => setIsLoad(true)
+	// }, [])
+
+	if (!img.onload) {
+		return <Loader />
 	}
 	return (
 		<Wrapper>
