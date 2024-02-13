@@ -153,6 +153,20 @@ p {
 	background-color: var(--clr-grey-3);
 	color: var(--clr-grey-8);
 }
+@keyframes spinner {
+  to {
+    transform: rotate(360deg);
+  }
+}
+.loading {
+  width: 5rem;
+  height: 5rem;
+  border: 5px solid var(--clr-grey-6);
+  border-radius: 50%;
+  border-top-color: var(--clr-gold);
+  animation: spinner .8s linear infinite;
+	margin: 0 auto;
+}
 
 @media screen and (min-width: 1024px) {
 	.height {
