@@ -2,8 +2,21 @@ import styled from 'styled-components'
 import { songs } from '../appData/songs-data'
 import { Link } from 'react-router-dom'
 import background from '../assets/bgrs/page-bgrs/songs-bgr.jpg'
+import { useEffect, useState } from 'react'
+import Loader from '../components/Loader'
 
 const Songs = () => {
+	const [isLoad, setIsLoad] = useState(false)
+
+	useEffect(() => {
+		const img = new Image()
+		img.src = background
+		img.onload = () => setIsLoad(true)
+	}, [])
+
+	if (!isLoad) {
+		return <Loader />
+	}
 	return (
 		<Wrapper>
 			<div className='section section-center flex height'>

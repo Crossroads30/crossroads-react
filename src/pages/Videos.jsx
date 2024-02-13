@@ -2,12 +2,23 @@ import styled from 'styled-components'
 import { videos } from '../appData/videos-data'
 import background from '../assets/bgrs/page-bgrs/videos-bgr.jpeg'
 import Modal from '../components/Modal'
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
+import Loader from '../components/Loader'
 
 const Videos = () => {
 	const [isModal, setIsModal] = useState(false)
 	const [modalUrl, setModalUrl] = useState('')
+	const [isLoad, setIsLoad] = useState(false)
 
+	useEffect(() => {
+		const img = new Image()
+		img.src = background
+		img.onload = () => setIsLoad(true)
+	}, [])
+
+	if (!isLoad) {
+		return <Loader />
+	}
 	return (
 		<Wrapper>
 			<div className='height section-center section'>

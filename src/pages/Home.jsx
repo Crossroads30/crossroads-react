@@ -1,7 +1,22 @@
 import styled from 'styled-components'
 import background from '../assets/bgrs/page-bgrs/home-bgr.jpeg'
+import { useEffect, useState } from 'react'
+import Loader from '../components/Loader'
 
 const Home = () => {
+	const [isLoad, setIsLoad] = useState(false)
+
+	useEffect(() => {
+		const img = new Image()
+		img.src = background
+		img.onload = () => setIsLoad(true)
+	}, [])
+
+	if (!isLoad) {
+		return (
+			<Loader />
+		)
+	}
 	return (
 		<Wrapper>
 			<div className='section-center flex height'>
@@ -18,7 +33,8 @@ const Home = () => {
 					</p>
 					<p>
 						Также перекресток - это своего рода выбор в каком направлении
-						двигаться дальше - прямо, свернуть, а может стоит вернуться назад?<br/>
+						двигаться дальше - прямо, свернуть, а может стоит вернуться назад?
+						<br />
 						Нам всем приходиться делать этот выбор, идя по своему жизненному
 						пути, практически ежедневно.
 					</p>
