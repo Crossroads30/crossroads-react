@@ -10,17 +10,13 @@ const Videos = () => {
 	const [modalUrl, setModalUrl] = useState('')
 	const [isLoad, setIsLoad] = useState(false)
 
-	const img = new Image()
-	img.src = background
-	img.onload = () => setIsLoad(true)
+	useEffect(() => {
+		const img = new Image()
+		img.src = background
+		img.onload = () => setIsLoad(true)
+	}, [])
 
-	// useEffect(() => {
-	// 	const img = new Image()
-	// 	img.src = background
-	// 	img.onload = () => setIsLoad(true)
-	// }, [])
-
-	if (!img.onload) {
+	if (!isLoad) {
 		return <Loader />
 	}
 	return (
