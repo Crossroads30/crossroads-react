@@ -17,7 +17,7 @@ const Song = () => {
 	const navigate = useNavigate()
 
 	const singleSong = songs.find(song => song.id === Number(id))
-	const { src, url, text, title } = singleSong
+	const { src, url, text, title, duration } = singleSong
 
 	useEffect(() => {
 		const img = new Image()
@@ -41,7 +41,13 @@ const Song = () => {
 								className='sound'
 								onClick={() => setIsAudio(!isAudio)}
 							/>
-							{isAudio && <AudioPlayer isAudio={isAudio} source={src} />}
+							{isAudio && (
+								<AudioPlayer
+									isAudio={isAudio}
+									source={src}
+									fullTime={duration}
+								/>
+							)}
 						</div>
 						<p className='text'>{text}</p>
 						<button
