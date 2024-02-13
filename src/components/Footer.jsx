@@ -24,13 +24,15 @@ export default Footer
 
 const Wrapper = styled.footer`
 	background-color: var(--clr-grey-2);
+	height: 3rem;
 	line-height: 1em;
 	.footer {
-		height: 3rem;
+		height: 100%;
 	}
 	p {
 		margin-bottom: 0;
 		font-size: 5.8px;
+		/* line-height: 100%; */
 	}
 	.youTube-link p {
 		font-family: var(--body-font);
@@ -47,6 +49,9 @@ const Wrapper = styled.footer`
 	.logo {
 		margin-left: 2px;
 		color: var(--clr-grey-8);
+	}
+	.text {
+		margin-top: 3px;
 	}
 	@media screen and (min-width: 425px) {
 		p {
@@ -69,9 +74,7 @@ const Wrapper = styled.footer`
 		}
 	}
 	@media screen and (min-width: 1024px) {
-		.footer {
-			height: 4rem;
-		}
+		height: 4rem;
 		p {
 			font-size: 1rem;
 		}

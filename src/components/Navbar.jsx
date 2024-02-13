@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom'
 const Navbar = ({ setSidebarOpen, isSidebarOpen }) => {
 	return (
 		<Wrapper>
-			<div className='section-center flex'>
+			<div className='section-center flex section'>
 				<Link to='/'>
 					<h1>перекрёсток</h1>
 				</Link>
@@ -35,12 +35,14 @@ const Wrapper = styled.header`
 	left: 0;
 	width: 100vw;
 	height: 3rem;
+	.section {
+		height: 100%;
+	}
 	h1 {
 		font-size: 0.8rem;
 		text-transform: uppercase;
 		text-shadow: 3px 3px 6px var(--clr-black);
 		color: var(--clr-grey-10);
-		padding: 5px 0;
 	}
 	.nav-links {
 		display: none;
