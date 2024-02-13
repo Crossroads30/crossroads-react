@@ -2,14 +2,29 @@ import React, { useState, useRef, useEffect } from 'react'
 import styled from 'styled-components'
 import { FaRegCirclePlay } from 'react-icons/fa6'
 import { FaRegCirclePause } from 'react-icons/fa6'
+// import parse from 'id3-parser'
+// import { convertFileToBuffer, fetchFileAsBuffer } from 'id3-parser/lib/util'
 
-function AudioPlayer({ source }) {
+function AudioPlayer({ source, fullTime }) {
 	const [isPlaying, setIsPlaying] = useState(false)
 	const [currentTime, setCurrentTime] = useState(0)
 	const [duration, setDuration] = useState(0)
 
 	const audio = new Audio(source)
 	const audioRef = useRef(audio)
+
+	// // You have a File instance in browser
+	// convertFileToBuffer(source)
+	// 	.then(parse)
+	// 	.then(tag => {
+	// 		console.log(tag)
+	// 	})
+	// // Or a remote mp3 file url
+	// fetchFileAsBuffer(source)
+	// 	.then(parse)
+	// 	.then(tag => {
+	// 		console.log(tag)
+	// 	})
 
 	useEffect(() => {
 		if (isPlaying) {
@@ -63,8 +78,7 @@ function AudioPlayer({ source }) {
 					/>
 				)}
 				<div className='time flex'>
-					<span>{formatDuration(currentTime)}</span>/
-					<span>{formatDuration(duration)}</span>
+					<span>{formatDuration(currentTime)}</span>/<span>{fullTime}</span>
 				</div>
 			</div>
 			<input
@@ -194,7 +208,7 @@ const Wrapper = styled.div`
 			height: 8px;
 		}
 	}
-		@media screen and (min-width: 1950px) {
-			left: 27vw;
-		}
+	@media screen and (min-width: 1950px) {
+		left: 27vw;
+	}
 `
