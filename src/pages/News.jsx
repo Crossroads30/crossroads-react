@@ -17,8 +17,9 @@ const News = () => {
 	}
 	return (
 		<Wrapper>
-			<div className='height section-center flex center'>
-				<p>Выбери свой собственный путь...</p>
+			<div className='height section-center flex-column center'>
+				<p className='text'>Выбери свой собственный путь...</p>
+				<p className='contacts'>crossroads30@mail.ru</p>
 			</div>
 		</Wrapper>
 	)
@@ -29,14 +30,19 @@ const Wrapper = styled.main`
 	background: url(${background}) no-repeat center center;
 	background-size: cover;
 	.center {
-		justify-content: center;
-		align-items: flex-start;
+		justify-content: space-between;
 	}
 	p {
 		color: var(--clr-grey-9);
 		text-shadow: 1px 2px 4px #000000;
+		text-align: center;
+	}
+	.text {
 		font-size: 2rem;
 		margin-top: 10rem;
-		text-align: center;
+	}
+	.contacts {
+		margin-bottom: 0;
+		font-size: 1.3rem;
 	}
 `
